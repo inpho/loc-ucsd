@@ -5,14 +5,15 @@ Uses the data files downloaded by fetch-data.sh.
 Requires RDFLib
 """
 import csv
-from rdflib.graph import Graph
-from rdflib.term import URIRef, Literal
+from urllib import urlencode
+from urllib2 import HTTPError, urlopen, URLError
 
 ucsd_data = 'data/UCSDmap.net'
 loc_data = 'data/subjects-skos.nt'
-loc_data = 'data/skos.nt'
-skos_prefLabel = URIRef("http://www.w3.org/2004/02/skos/core#prefLabel")
-skos_altLabel = URIRef("http://www.w3.org/2004/02/skos/core#altLabel")
+
+# LoC Known-label retrieval: http://id.loc.gov/techcenter/searching.html
+loc_label_uri = 'http://id.loc.gov/authorities/subjects/label/'
+loc_subject_uri = 'http://id.loc.gov/authorities/subjects/'
 
 def get_subdiscipline_names(filename):
     with open(filename) as csvfile:
@@ -38,19 +39,18 @@ def get_subdiscipline_names(filename):
 
     return nodes
 
-def get_loc_graph(filename):
-    g = Graph()
-    g.parse(filename, format="nt")
-    return g
+def match(label):
+    try:
+        response = urlopen(loc_label_uri + label)
+        url = response.geturl()
+        subject = url.replace(loc_subject_uri, '').replace('.html', '')
+        return subject
 
-def match(label, g):
-    m = g.subjects(skos_prefLabel, Literal(label))
-    if not m:
-        m = g.subjects(skos_altLabel, Literal(label))
-    return m
+    except (HTTPError, URLError):
+        return None
     
 
 if __name__ == '__main__':
     for name in get_subdiscipline_names(ucsd_data):
-        print name
+        match(urlencode(name)) 
 
