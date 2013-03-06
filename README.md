@@ -5,6 +5,10 @@ Attempt to map [Library of Congress Subject Headings](http://id.loc.gov/authorit
 
 If this naive match does not work, I will attempt to look up the journals composing a UCSD subdiscipline and see if I can find any LoC classification for them, and assign the subdiscipline the plurality LoC journal classification.
 
+Setup
+-------
+1. Execute `fetch-data.sh` to retrieve the datasets necessary to run the script
+
 Datasets
 ----------
 * LoC Subject Headings SKOS/RDF data [NT](http://id.loc.gov/static/data/authoritiessubjects.nt.skos.zip) [rdfxml](http://id.loc.gov/static/data/authoritiessubjects.rdfxml.skos.zip)
