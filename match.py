@@ -5,7 +5,7 @@ Uses the data files downloaded by fetch-data.sh.
 Requires RDFLib
 """
 import csv
-from urllib import urlencode
+from urllib import quote_plus
 from urllib2 import HTTPError, urlopen, URLError
 
 ucsd_data = 'data/UCSDmap.net'
@@ -15,11 +15,11 @@ loc_data = 'data/subjects-skos.nt'
 loc_label_uri = 'http://id.loc.gov/authorities/subjects/label/'
 loc_subject_uri = 'http://id.loc.gov/authorities/subjects/'
 
-def get_subdiscipline_names(filename):
-    with open(filename) as csvfile:
-        vertices = None
-        nodes = []
+def get_subdisciplines(filename):
+    vertices = None
+    nodes = dict()
 
+    with open(filename) as csvfile:
         netreader = csv.reader(csvfile, delimiter=' ', quotechar='"')
 
         for row in netreader:
@@ -34,8 +34,7 @@ def get_subdiscipline_names(filename):
 
             # process node
             if vertices:
-                print row
-                nodes.append(row[1])
+                nodes[row[0]] = row[1]
 
     return nodes
 
@@ -51,6 +50,6 @@ def match(label):
     
 
 if __name__ == '__main__':
-    for name in get_subdiscipline_names(ucsd_data):
-        match(urlencode(name)) 
+    for id, name in get_subdisciplines(ucsd_data).iteritems():
+        print id, match(quote_plus(name)) 
 
