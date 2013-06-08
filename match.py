@@ -5,6 +5,7 @@ Uses the data files downloaded by fetch-data.sh.
 Requires RDFLib
 """
 import csv
+from urlparse import urlparse
 from urllib import quote_plus
 from urllib2 import HTTPError, urlopen, URLError
 
