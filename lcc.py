@@ -49,7 +49,7 @@ def get_lccns(directory):
 def get_lccs(lccns):
     lccs = dict()
     
-    for path, lccn in lccns.items()[:10]:
+    for path, lccn in lccns.iteritems():
         loc_marc_path = os.path.join(path, "loc.marc.xml")
         print loc_marc_path
         if not os.path.exists(loc_marc_path):
@@ -65,13 +65,13 @@ def get_lccs(lccns):
 
 def parse_marc(raw):
     # lazy workaround
-    raw = raw.replace(' xmlns', ' xmlnamespace')
-    ET.register_namespace('', 'http://www.loc.gov/MARC21/slim')
+    # raw = raw.replace(' xmlns', ' xmlnamespace')
+    # ET.register_namespace('', 'http://www.loc.gov/MARC21/slim')
     return ET.fromstring(raw)
 
 def get_marc_value(xml, tag, code):
-    xpath = "./record/datafield[@tag='{tag}']/subfield[@code='{code}']".format(
-                tag=tag, code=code)
+    xpath = "{marc}datafield[@tag='{tag}']/{marc}subfield[@code='{code}']".format(
+                tag=tag, code=code, marc="{http://www.loc.gov/MARC21/slim}")
     results = xml.findall(xpath)
     return results[0].text if results else None
 
@@ -110,6 +110,18 @@ def get_loc_marc(lccn, local_copy):
 
 if __name__ == '__main__':
     import argparse
+    import csv
 
-    print get_lccs(get_lccns('data/htrc'))
+    directory = 'data/htrc'
+    outfile = 'htrc1315.csv'
+    lccns = get_lccns(directory)
+    lccs = get_lccs(lccns)
+
+    with open(outfile, 'wb') as csvfile:
+        writer = csv.writer(csvfile)
+        for json_file in glob(directory + '/*/*.json'):
+            dirname = os.path.dirname(json_file)
+            htrc_id = os.path.split(dirname)[-1]
+            writer.writerow(
+                [htrc_id, lccns.get(dirname,''),lccs.get(dirname,'')])
 
