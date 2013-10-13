@@ -13,6 +13,7 @@ using MARC21slim2MODS3-4.xsl (Revision 1.85 2013/03/07)
 """
 
 from codecs import open
+from collections import defaultdict
 from glob import iglob as glob
 import io
 import json
@@ -23,9 +24,11 @@ import xml.etree.ElementTree as ET
 
 def get_lccns(directory):
     # build list of LCCNS from directory
-    lccns = set()
+    lccns = dict()
 
     for json_file in glob(directory + '/*/*.json'):
+        dirname = os.path.dirname(json_file)
+
         with open(json_file, encoding='utf-8') as f:
             data = json.load(f)
 
@@ -33,21 +36,30 @@ def get_lccns(directory):
             lccn = record.get("lccns")
             if lccn:
                 assert len(lccn) == 1
-                lccns.add(lccn[0])
-            
-            marc = parse_marc(record['marc-xml'].encode('utf-8'))
-            marc_lccn = get_lccn_from_marc(marc)
-            if marc_lccn:
-                lccns.add(marc_lccn)
+                lccns[dirname] = lccn[0]
+            else:
+                marc = parse_marc(record['marc-xml'].encode('utf-8'))
+                marc_lccn = get_lccn_from_marc(marc)
+                if marc_lccn:
+                    lccns[dirname] = marc_lccn
+
 
     return lccns
 
 def get_lccs(lccns):
-    lccs = set()
-    lccns = list(lccns)
-
-    for lccn in lccns[:5]:
-        get_lcc(lccn)
+    lccs = dict()
+    
+    for path, lccn in lccns.items()[:10]:
+        loc_marc_path = os.path.join(path, "loc.marc.xml")
+        print loc_marc_path
+        if not os.path.exists(loc_marc_path):
+            get_loc_marc(lccn, loc_marc_path)
+        
+        
+        if os.path.exists(loc_marc_path):
+            with open(loc_marc_path, encoding='utf-8') as marc:
+                xml = parse_marc(marc.read())
+                lccs[path] = get_lcc_from_marc(xml)
 
     return lccs
 
@@ -67,21 +79,6 @@ def get_lccn_from_marc(xml):
     lccn = get_marc_value(xml, '010', 'a')
     return lccn
 
-def get_lcc(lccn):
-    sleep(5)
-    url = 'http://lccn.loc.gov/{lccn}/marcxml'.format(lccn=lccn)
-    print url
-    raw = urllib.urlopen(url)
-    if raw.getcode() < 400:
-        if raw.info.get('Content-Type', '') == 'application/xml':
-            marc = ET.parse(raw).getroot()
-            return get_lcc_from_marc(marc)
-        else:
-            print "url not xml", url
-    else:
-        print "could not retrieve", url
-        return None
-
 
 
 def get_lcc_from_marc(xml):
@@ -95,6 +92,21 @@ def get_lcc_from_marc(xml):
         lcc = get_marc_value(xml, '991', 'i')
 
     return lcc
+
+def get_loc_marc(lccn, local_copy):
+    sleep(5)
+    url = 'http://lccn.loc.gov/{lccn}/marcxml'.format(lccn=lccn)
+    print url
+    raw = urllib.urlopen(url)
+    if raw.getcode() < 400:
+        if raw.info().get('Content-Type', '') == 'application/xml':
+            print "writing contents to", local_copy
+            with open(local_copy, 'w', encoding='utf-8') as f:
+                f.write(raw.read())
+        else:
+            print "url not xml", url
+    else:
+        print "could not retrieve", url
 
 if __name__ == '__main__':
     import argparse
