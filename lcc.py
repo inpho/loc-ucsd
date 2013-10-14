@@ -57,9 +57,13 @@ def get_lccs(lccns):
         
         
         if os.path.exists(loc_marc_path):
-            with open(loc_marc_path, encoding='utf-8') as marc:
-                xml = parse_marc(marc.read())
+            try:
+                xml = ET.parse(loc_marc_path).getroot()
                 lccs[path] = get_lcc_from_marc(xml)
+            #except UnicodeDecodeError:
+            #    pass
+            except ET.ParseError:
+                pass
 
     return lccs
 
@@ -102,7 +106,8 @@ def get_loc_marc(lccn, local_copy):
         if raw.info().get('Content-Type', '') == 'application/xml':
             print "writing contents to", local_copy
             with open(local_copy, 'w', encoding='utf-8') as f:
-                f.write(raw.read())
+                text = raw.read().decode('utf-8')
+                f.write(text)
         else:
             print "url not xml", url
     else:
