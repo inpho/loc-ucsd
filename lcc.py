@@ -87,15 +87,24 @@ def get_lccn_from_marc(xml):
 
 def get_lcc_from_marc(xml):
     # MARC tag 050a/b or 991h/i
-    lcc = get_marc_value(xml, '050', 'a')
-    if lcc is None:
-        lcc = get_marc_value(xml, '050', 'b')
-    if lcc is None:
-        lcc = get_marc_value(xml, '991', 'h')
-    if lcc is None:
-        lcc = get_marc_value(xml, '991', 'i')
+    lcc = list()
+    val = get_marc_value(xml, '050', 'a')
+    if val:
+        lcc.append(val)
+    
+    val = get_marc_value(xml, '050', 'b')
+    if val:
+        lcc[-1] += val
 
-    return lcc
+    val = get_marc_value(xml, '991', 'h')
+    if val:
+        lcc.append(val)
+
+    val = get_marc_value(xml, '991', 'i')
+    if val:
+        lcc[-1] += val
+
+    return ";".join(lcc)
 
 def get_loc_marc(lccn, local_copy):
     sleep(5)
@@ -122,6 +131,9 @@ if __name__ == '__main__':
     lccns = get_lccns(directory)
     lccs = get_lccs(lccns)
 
+    total = 0
+    no_lccn = 0
+    no_lcc = 0
     with open(outfile, 'wb') as csvfile:
         writer = csv.writer(csvfile)
         for json_file in glob(directory + '/*/*.json'):
@@ -129,4 +141,12 @@ if __name__ == '__main__':
             htrc_id = os.path.split(dirname)[-1]
             writer.writerow(
                 [htrc_id, lccns.get(dirname,''),lccs.get(dirname,'')])
+            total += 1
+            if not lccns.get(dirname):
+                no_lccn += 1
+            if not lccs.get(dirname):
+                no_lcc += 1
+
+
+    print total, no_lccn, no_lcc
 
