@@ -46,6 +46,27 @@ def get_lccns(directory):
 
     return lccns
 
+def get_titles(directory):
+    titles = dict()
+
+    for json_file in glob(directory + '/*/*.json'):
+        dirname = os.path.dirname(json_file)
+
+        with open(json_file, encoding='utf-8') as f:
+            data = json.load(f)
+
+        for record in data['records'].itervalues():
+            title = record.get("titles")
+            if title:
+                titles[dirname] = title[0]
+            else:
+                marc = parse_marc(record['marc-xml'].encode('utf-8'))
+                marc_title = get_title_from_marc(marc)
+                if marc_title:
+                    lccns[dirname] = marc_title
+
+    return titles
+
 def get_lccs(lccns):
     lccs = dict()
     
@@ -80,8 +101,10 @@ def get_marc_value(xml, tag, code):
     return results[0].text if results else None
 
 def get_lccn_from_marc(xml):
-    lccn = get_marc_value(xml, '010', 'a')
-    return lccn
+    return get_marc_value(xml, '010', 'a')
+
+def get_title_from_marc(xml):
+    return get_marc_value(xml, '245', 'a')
 
 
 
@@ -129,18 +152,25 @@ if __name__ == '__main__':
     directory = 'data/htrc'
     outfile = 'htrc1315.csv'
     lccns = get_lccns(directory)
+    titles = get_titles(directory)
     lccs = get_lccs(lccns)
 
     total = 0
     no_lccn = 0
     no_lcc = 0
-    with open(outfile, 'wb') as csvfile:
+    with open(outfile, 'wb', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         for json_file in glob(directory + '/*/*.json'):
             dirname = os.path.dirname(json_file)
             htrc_id = os.path.split(dirname)[-1]
-            writer.writerow(
-                [htrc_id, lccns.get(dirname,''),lccs.get(dirname,'')])
+            try:
+                writer.writerow(
+                [htrc_id, 
+                 titles.get(dirname, ''),
+                 lccns.get(dirname,''),
+                 lccs.get(dirname,'')])
+            except:
+                pass
             total += 1
             if not lccns.get(dirname):
                 no_lccn += 1
