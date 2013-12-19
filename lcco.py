@@ -11,7 +11,7 @@ LCC = namedtuple('LCC', ['cls', 'subcls', 'topic'])
 # create RDF graph
 graph = rdflib.Graph()
 with open('data/lcco.rdf') as skosfile:
-    graph.parse('data/lcco.rdf', format='application/rdf+xml')
+    graph.parse('data/lcco.rdf')
 
 # create SKOS representation
 loader = skos.RDFLoader(graph)
@@ -34,7 +34,10 @@ def get_closest(lcc):
         closest = lcc
 
     parsed = parse_lcc(lcc)
-    cur_uri = LCCO_URI + parsed.cls
+    if parsed.cls != 'E' and parsed.cls != 'F':
+        cur_uri = LCCO_URI + parsed.cls
+    else:
+        cur_uri = LCCO_URI + 'E-F'
     next_uri = [narrow for narrow, obj in loader[cur_uri].narrower.iteritems()
                     if in_range(lcc,str(obj.notation))]
 
@@ -61,6 +64,8 @@ def in_range(lcc, candidate):
             return True
         return False
     elif candidate.subcls and lcc.subcls != candidate.subcls:
+        if (lcc.cls == 'E' or lcc.cls =='F') and candidate.cls == 'E-F':
+            return True
         return False
     elif candidate.topic:
         if not lcc.topic:
