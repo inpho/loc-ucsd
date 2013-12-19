@@ -64,8 +64,6 @@ def in_range(lcc, candidate):
             return True
         return False
     elif candidate.subcls and lcc.subcls != candidate.subcls:
-        if (lcc.cls == 'E' or lcc.cls =='F') and candidate.cls == 'E-F':
-            return True
         return False
     elif candidate.topic:
         if not lcc.topic:
