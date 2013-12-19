@@ -57,6 +57,8 @@ def in_range(lcc, candidate):
     lcc = parse_lcc(lcc)
     candidate = parse_lcc(candidate)
     if lcc.cls != candidate.cls:
+        if (lcc.cls == 'E' or lcc.cls =='F') and candidate.cls == 'E-F':
+            return True
         return False
     elif candidate.subcls and lcc.subcls != candidate.subcls:
         return False
