@@ -1,0 +1,1573 @@
+LoC,subd_id,subd_name,journals
+AG305,209,English Literature,1
+AN2,475,Medical Practice,1
+AP1,108,Chaos Fractals & Complexity,1
+AP18,283,Sociology,1
+AP2,105,Research Policy; Technology Management,1
+AP2,122,Philosophy Psychology,1
+AP2,145,Communication Research,1
+AP2,181,Political Science,1
+AP2,222,Linguistics,1
+AP2,230,Hispanic Studies,1
+AP2,237,Environmental Management,1
+AP2,279,Biblical Literature,1
+AP2,283,Sociology,1
+AP2,407,Ethics,1
+AP2,409,Aerospace,1
+AP2,420,Semiotics,1
+AP2,436,Construction,1
+AP2,453,Hospital Management,1
+AP2,495,Opera,1
+AP2,513,Social Economics,1
+AP2,542,Perception Motor Skills,1
+AP2,15,Hospital Financial Management,2
+AP2,348,Literary Criticism,2
+AP2,410,Critical Studies,2
+AP2,502,Socio-Cultural Anthropology,2
+AP2,209,English Literature,5
+AP20,183,Poetry,1
+AP20,230,Hispanic Studies,1
+AP20,246,Ethnic Migration,1
+AP20,420,Semiotics,1
+AP20,495,Opera,1
+AP20,214,Modern Language,2
+AP20,467,Cross Disciplinary Studies,3
+AP21,420,Semiotics,1
+AP21,495,Opera,1
+AP215,510,Hearing Research,1
+AP30,112,Classics,1
+AP30,181,Political Science,1
+AP30,379,German Studies,1
+AP30,183,Poetry,2
+AP32,105,Research Policy; Technology Management,1
+AP37,122,Philosophy Psychology,1
+AP37,214,Modern Language,1
+AP37,467,Cross Disciplinary Studies,1
+AP37,541,Italian Studies,3
+AP4,112,Classics,1
+AP4,145,Communication Research,1
+AP4,334,Contemporary Philosophy,1
+AP4,348,Literary Criticism,1
+AP4,379,German Studies,1
+AP4,434,Environmental Policy,1
+AP4,488,Social History,1
+AP4,513,Social Economics,1
+AP4,209,English Literature,3
+AP5,209,English Literature,1
+AP5,267,International Conflict,1
+AP5,268,Art History,1
+AP5,492,GeoPolitics,1
+AP50,438,Regional Studies,1
+AP52,112,Classics,1
+AP52,181,Political Science,1
+AP56,145,Communication Research,1
+AP58,420,Semiotics,1
+AP60,230,Hispanic Studies,1
+AP60,380,Medieval History,1
+AP60,407,Ethics,1
+AP60,488,Social History,1
+AP60,527,Tourism,1
+AP62,380,Medieval History,1
+AP63,122,Philosophy Psychology,1
+AP63,230,Hispanic Studies,1
+AP63,380,Medieval History,2
+AP66,214,Modern Language,1
+AP7,348,Literary Criticism,1
+AP7,420,Semiotics,1
+AP7,467,Cross Disciplinary Studies,1
+AP82,502,Socio-Cultural Anthropology,1
+AP95,181,Political Science,1
+AS,495,Opera,1
+AS121,112,Classics,1
+AS121,209,English Literature,1
+AS122,468,Archeological Science,1
+AS244,161,Electro Analytical Chemistry,1
+AS30,495,Opera,1
+AS30,496,Education,1
+AS30,209,English Literature,4
+AS36,407,Ethics,1
+AS471,542,Perception Motor Skills,1
+AS551,407,Ethics,1
+AS611,329,Personality,1
+AS613,283,Sociology,1
+AS80,122,Philosophy Psychology,1
+AS83,325,Plant Ecology,1
+AY78,169,Language Learning,1
+AZ188,468,Archeological Science,1
+B1,268,Art History,1
+B1,272,Medical Insurance,1
+B1,383,Foreign Policy,1
+B1,502,Socio-Cultural Anthropology,1
+B1,542,Perception Motor Skills,1
+B1,122,Philosophy Psychology,18
+B108,125,High Energy Physics,1
+B130,122,Philosophy Psychology,1
+B2,122,Philosophy Psychology,1
+B2,334,Contemporary Philosophy,4
+B2550,334,Contemporary Philosophy,1
+B2750,334,Contemporary Philosophy,1
+B2900,334,Contemporary Philosophy,1
+B3,122,Philosophy Psychology,1
+B3,334,Contemporary Philosophy,4
+B31,122,Philosophy Psychology,1
+B4,122,Philosophy Psychology,1
+B4,541,Italian Studies,2
+B4,334,Contemporary Philosophy,3
+B4841,122,Philosophy Psychology,1
+B4842,142,Music & Theatre,1
+B5,122,Philosophy Psychology,1
+B5,334,Contemporary Philosophy,1
+B5,502,Socio-Cultural Anthropology,1
+B5000,122,Philosophy Psychology,1
+B5230,122,Philosophy Psychology,1
+B5300,431,Public Policy,2
+B6,250,Ethnology,1
+B6,334,Contemporary Philosophy,3
+B8.L6,246,Ethnic Migration,1
+B8.R9,381,Philosophy of Education,1
+B804,122,Philosophy Psychology,1
+B823,334,Contemporary Philosophy,1
+B839,122,Philosophy Psychology,1
+B843,122,Philosophy Psychology,1
+B905,209,English Literature,1
+BC1,122,Philosophy Psychology,2
+BC135,331,Logic,1
+BC50,122,Philosophy Psychology,1
+BD1,511,Human Rights,1
+BF1,11,Affective Disorders,1
+BF1,69,Psychopharmacology,1
+BF1,122,Philosophy Psychology,1
+BF1,144,Vision,1
+BF1,209,English Literature,1
+BF1,403,Human Resource Management,1
+BF1,423,Molecular Ecology,1
+BF1,312,Child Development,2
+BF1,408,Marital & Family Therapy,2
+BF1,418,Educational Psychology,3
+BF1,124,Social Psychology,4
+BF1,329,Personality,5
+BF1,425,Clinical Psychiatry,5
+BF1,143,Memory & Cognition,7
+BF1,477,Consciousness,7
+BF1001,71,Psychoanalysis,1
+BF1401,183,Poetry,1
+BF173,71,Psychoanalysis,3
+BF180,143,Memory & Cognition,3
+BF199,477,Consciousness,1
+BF2,143,Memory & Cognition,1
+BF204,124,Social Psychology,1
+BF21,329,Personality,1
+BF295,542,Perception Motor Skills,1
+BF3,124,Social Psychology,1
+BF3,143,Memory & Cognition,1
+BF3,425,Clinical Psychiatry,1
+BF30,143,Memory & Cognition,1
+BF30,418,Educational Psychology,1
+BF309,498,Pragmatics & Discourse,1
+BF311,124,Social Psychology,1
+BF311,144,Vision,1
+BF321,143,Memory & Cognition,1
+BF353,144,Vision,1
+BF39,535,Education Psychological Measures,1
+BF408,171,Leadership & Organizational Behavior,1
+BF5,124,Social Psychology,1
+BF5,472,Psychosomatic Medicine,1
+BF636,171,Leadership & Organizational Behavior,1
+BF636,408,Marital & Family Therapy,1
+BF636,464,Pychiatric & Behavioral Genetics,1
+BF637,464,Pychiatric & Behavioral Genetics,1
+BF683,124,Social Psychology,1
+BF698,124,Social Psychology,1
+BF699,312,Child Development,1
+BF7,403,Human Resource Management,1
+BF721,71,Psychoanalysis,1
+BF721,235,Child & Adolescent Psychiatry,1
+BF721,312,Child Development,1
+BF721,386,School Psychology,1
+BF724,154,Gerontology,1
+BF728,403,Human Resource Management,1
+BF76,477,Consciousness,1
+BF77,444,Engineering Education,1
+BF8,418,Educational Psychology,1
+BF81,148,Pharmacy,1
+BH1,122,Philosophy Psychology,1
+BH41,403,Human Resource Management,1
+BJ1,407,Ethics,1
+BJ1188,279,Biblical Literature,1
+BJ3,279,Biblical Literature,1
+BL1,122,Philosophy Psychology,1
+BL1,250,Ethnology,3
+BL2202,391,Asian Studies,1
+BL240,182,Science History,1
+BL3,279,Biblical Literature,1
+BL4,279,Biblical Literature,1
+BL60,408,Marital & Family Therapy,1
+BM1,279,Biblical Literature,3
+BQ7300,407,Ethics,1
+BR1,407,Ethics,2
+BR1,279,Biblical Literature,5
+BR140,170,American History,1
+BR140,379,German Studies,1
+BR140,488,Social History,2
+BR4,279,Biblical Literature,1
+BR60,112,Classics,1
+BR66,112,Classics,1
+BS410,279,Biblical Literature,10
+BS620,468,Archeological Science,1
+BV1460,134,Teacher Education; Evaluation,1
+BV1460,279,Biblical Literature,1
+BV1460,408,Marital & Family Therapy,1
+BV630,27,Law,2
+BX100,411,Econometrics,1
+BX800,122,Philosophy Psychology,1
+BX801,122,Philosophy Psychology,1
+BX801,408,Marital & Family Therapy,1
+BX801,279,Biblical Literature,2
+BX802,334,Contemporary Philosophy,1
+BX8905,170,American History,1
+BX940,407,Ethics,1
+CB201,222,Linguistics,1
+CB231,381,Philosophy of Education,1
+CB231,407,Ethics,1
+CB251,377,International Economics,1
+CB253,281,Third World Political Economics,1
+CB3,410,Critical Studies,1
+CB3,420,Semiotics,1
+CB3,511,Human Rights,1
+CB351,407,Ethics,1
+CB359,209,English Literature,1
+CB360,407,Ethics,1
+CB401,407,Ethics,1
+CB411,209,English Literature,1
+CB478,182,Science History,1
+CC1,391,Asian Studies,1
+CC1,468,Archeological Science,9
+CC13,468,Archeological Science,1
+CC21,468,Archeological Science,1
+CC72,468,Archeological Science,1
+CC75,468,Archeological Science,1
+CD1,164,Library Science; Infomation Retrieval,1
+CD1,276,Search Engines; Web Crawling,1
+CD23,164,Library Science; Infomation Retrieval,1
+CT100,410,Critical Studies,1
+D1,112,Classics,1
+D1,164,Library Science; Infomation Retrieval,1
+D1,170,American History,1
+D1,209,English Literature,1
+D1,267,International Conflict,1
+D1,391,Asian Studies,1
+D1,431,Public Policy,1
+D1,498,Pragmatics & Discourse,1
+D1,511,Human Rights,1
+D1,407,Ethics,2
+D1,467,Cross Disciplinary Studies,2
+D1,502,Socio-Cultural Anthropology,3
+D1,379,German Studies,4
+D1,488,Social History,8
+D1050,379,German Studies,1
+D1050,431,Public Policy,1
+D111,182,Science History,1
+D111,209,English Literature,1
+D111,407,Ethics,1
+D111,380,Medieval History,2
+D13,488,Social History,1
+D16,170,American History,1
+D16,488,Social History,1
+D2,250,Ethnology,1
+D2009,261,Political Studies,1
+D220,380,Medieval History,1
+D377,488,Social History,1
+D377,502,Socio-Cultural Anthropology,1
+D410,383,Foreign Policy,1
+D410,410,Critical Studies,1
+D410,423,Molecular Ecology,1
+D410,267,International Conflict,3
+D51,467,Cross Disciplinary Studies,1
+D731,379,German Studies,1
+D810,379,German Studies,1
+D825,420,Semiotics,1
+D825,513,Social Economics,1
+D839,383,Foreign Policy,1
+D839,281,Third World Political Economics,2
+D839,267,International Conflict,3
+D839,492,GeoPolitics,3
+D880,259,International Development,1
+D974,431,Public Policy,1
+DA10,383,Foreign Policy,1
+DA10,431,Public Policy,1
+DA140,222,Linguistics,1
+DA20,468,Archeological Science,1
+DA20,488,Social History,1
+DA20,407,Ethics,2
+DA334,209,English Literature,1
+DA533,209,English Literature,1
+DA550,420,Semiotics,1
+DA589,488,Social History,1
+DA700,488,Social History,1
+DA750,488,Social History,1
+DA900,198,Political Geography,1
+DA900,488,Social History,1
+DB193,112,Classics,1
+DB2000,438,Regional Studies,1
+DB310,468,Archeological Science,1
+DB370,502,Socio-Cultural Anthropology,1
+DB401,488,Social History,1
+DB901,375,Developmental Economics,1
+DC1,149,Geomorphology,1
+DC1,488,Social History,1
+DC139,488,Social History,1
+DC33,498,Pragmatics & Discourse,1
+DC33,142,Music & Theatre,1
+DC415,334,Contemporary Philosophy,1
+DC611,488,Social History,1
+DC611,220,Urban Studies,1
+DD1,379,German Studies,4
+DD101,379,German Studies,2
+DD17,438,Regional Studies,1
+DE1,488,Social History,1
+DE1,511,Human Rights,1
+DE1,112,Classics,3
+DE100,281,Third World Political Economics,1
+DE3,112,Classics,1
+DF10,112,Classics,1
+DF10,468,Archeological Science,1
+DF11,468,Archeological Science,1
+DF501,407,Ethics,1
+DF501,112,Classics,2
+DF741,250,Ethnology,1
+DG11,112,Classics,1
+DG11,467,Cross Disciplinary Studies,1
+DG11,468,Archeological Science,1
+DG12,468,Archeological Science,1
+DG401,488,Social History,1
+DG401,541,Italian Studies,4
+DG447,541,Italian Studies,1
+DG533,541,Italian Studies,1
+DG538,379,German Studies,1
+DG552,488,Social History,1
+DG552,541,Italian Studies,1
+DG803,268,Art History,1
+DK1,502,Socio-Cultural Anthropology,5
+DK246,467,Cross Disciplinary Studies,1
+DK265,502,Socio-Cultural Anthropology,1
+DK274,181,Political Science,1
+DK4010,112,Classics,1
+DK4010,381,Philosophy of Education,1
+DK4010,407,Ethics,1
+DK4010,467,Cross Disciplinary Studies,1
+DK4440,407,Ethics,1
+DK4600,467,Cross Disciplinary Studies,1
+DK503,379,German Studies,1
+DK507,502,Socio-Cultural Anthropology,1
+DK508,181,Political Science,1
+DK511,379,German Studies,1
+DL1,182,Science History,1
+DL1,183,Poetry,1
+DL1,198,Political Geography,1
+DL1,379,German Studies,1
+DL101,267,International Conflict,1
+DL401,267,International Conflict,1
+DP1,246,Ethnic Migration,1
+DP1,488,Social History,2
+DP302,498,Pragmatics & Discourse,1
+DP48,468,Archeological Science,1
+DP501,222,Linguistics,1
+DP501,502,Socio-Cultural Anthropology,1
+DR1,467,Cross Disciplinary Studies,1
+DR1350,488,Social History,1
+DR1620,468,Archeological Science,1
+DR24,431,Public Policy,1
+DR279,420,Semiotics,1
+DR401,281,Third World Political Economics,1
+DR401,380,Medieval History,1
+DR401,527,Tourism,1
+DS1,391,Asian Studies,1
+DS1,407,Ethics,1
+DS1,468,Archeological Science,1
+DS1,511,Human Rights,1
+DS1,222,Linguistics,2
+DS1,281,Third World Political Economics,2
+DS1,383,Foreign Policy,2
+DS101,122,Philosophy Psychology,1
+DS101,230,Hispanic Studies,1
+DS101,468,Archeological Science,1
+DS101,279,Biblical Literature,2
+DS111,279,Biblical Literature,2
+DS119,431,Public Policy,1
+DS128,181,Political Science,1
+DS132,142,Music & Theatre,1
+DS133,502,Socio-Cultural Anthropology,1
+DS135,279,Biblical Literature,1
+DS135,502,Socio-Cultural Anthropology,1
+DS149,279,Biblical Literature,1
+DS201,467,Cross Disciplinary Studies,1
+DS211,468,Archeological Science,1
+DS251,281,Third World Political Economics,1
+DS261,468,Archeological Science,1
+DS327,250,Ethnology,1
+DS335,407,Ethics,1
+DS35,431,Public Policy,1
+DS36,281,Third World Political Economics,1
+DS36,431,Public Policy,1
+DS36,407,Ethics,2
+DS36,407,Ethics,1
+DS41,431,Public Policy,1
+DS41,467,Cross Disciplinary Studies,1
+DS41,281,Third World Political Economics,3
+DS42,383,Foreign Policy,1
+DS501,250,Ethnology,1
+DS501,383,Foreign Policy,1
+DS501,492,GeoPolitics,1
+DS501,391,Asian Studies,3
+DS56,468,Archeological Science,1
+DS61,281,Third World Political Economics,1
+DS63,281,Third World Political Economics,1
+DS701,438,Regional Studies,1
+DS701,440,Digital Printing,1
+DS701,383,Foreign Policy,4
+DS740,267,International Conflict,1
+DS754,391,Asian Studies,1
+DS777,383,Foreign Policy,1
+DS777,391,Asian Studies,1
+DS785,281,Third World Political Economics,1
+DS785,281,Third World Political Economics,1
+DS801,383,Foreign Policy,1
+DS801,391,Asian Studies,1
+DS821,391,Asian Studies,1
+DS901,181,Political Science,1
+DS901,383,Foreign Policy,1
+DS901,391,Asian Studies,2
+DT1,407,Ethics,1
+DT1,483,Superconductor Science,1
+DT1,511,Human Rights,1
+DT1,420,Semiotics,2
+DT1,431,Public Policy,13
+DT14,431,Public Policy,2
+DT160,281,Third World Political Economics,1
+DT37,431,Public Policy,1
+DT57,468,Archeological Science,1
+DT751,126,Strategic Management,1
+DT751,181,Political Science,1
+DT751,431,Public Policy,1
+DT766,431,Public Policy,1
+DT779,145,Communication Research,1
+DU1,267,International Conflict,1
+DU120,511,Human Rights,1
+DU28,511,Human Rights,1
+DU29,383,Foreign Policy,1
+DU80,383,Foreign Policy,1
+DU80,431,Public Policy,2
+E11,142,Music & Theatre,1
+E11,468,Archeological Science,1
+E151,438,Regional Studies,1
+E164,170,American History,1
+E169,488,Social History,1
+E171,279,Biblical Literature,1
+E171,488,Social History,1
+E171,170,American History,2
+E172,170,American History,1
+E183,488,Social History,1
+E184,246,Ethnic Migration,2
+E184,279,Biblical Literature,1
+E184,511,Human Rights,1
+E184,502,Socio-Cultural Anthropology,1
+E185,408,Marital & Family Therapy,2
+E185,265,Vocational Counseling,1
+E202,164,Library Science; Infomation Retrieval,1
+E337,170,American History,1
+E43,468,Archeological Science,1
+E461,170,American History,1
+E51,468,Archeological Science,2
+E75,250,Ethnology,1
+E78,250,Ethnology,1
+E838,267,International Conflict,1
+E838,492,GeoPolitics,1
+E839.5,272,Medical Insurance,1
+F1001,420,Semiotics,1
+F1029,170,American History,1
+F1035,420,Semiotics,1
+F116,170,American History,1
+F1201,261,Political Studies,1
+F1219,468,Archeological Science,1
+F1229,468,Archeological Science,1
+F1401,198,Political Geography,1
+F1401,230,Hispanic Studies,1
+F1401,283,Sociology,1
+F1401,380,Medieval History,1
+F1401,467,Cross Disciplinary Studies,1
+F1401,261,Political Studies,3
+F1408,541,Italian Studies,1
+F1410,261,Political Studies,1
+F1412,468,Archeological Science,1
+F1434,468,Archeological Science,1
+F146,170,American History,1
+F206,170,American History,1
+F221,488,Social History,1
+F2801,467,Cross Disciplinary Studies,1
+F3051,413,Mineralogy,1
+F3069,468,Archeological Science,1
+F3186,468,Archeological Science,1
+F3401,410,Critical Studies,1
+F3401,467,Cross Disciplinary Studies,1
+F351,170,American History,1
+F381,170,American History,1
+F591,198,Political Geography,2
+F591,170,American History,1
+F726,170,American History,1
+F791,388,Environmental Law,2
+F806,468,Archeological Science,1
+F821,209,English Literature,1
+F821,543,World Trade; Law,1
+F857,488,Social History,1
+F871,468,Archeological Science,1
+F886,502,Socio-Cultural Anthropology,1
+G1,149,Geomorphology,1
+G1,198,Political Geography,1
+G1,246,Ethnic Migration,1
+G1,293,Climatology,1
+G1,438,Regional Studies,1
+G13,410,Critical Studies,1
+G23,426,Paleogeography,1
+G31,198,Political Geography,1
+G58,438,Regional Studies,1
+GF1,438,Regional Studies,1
+GF1,468,Archeological Science,1
+GF75,488,Social History,1
+GN1,166,Quaternary Research,1
+GN1,321,Human Evolution,1
+GN1,418,Educational Psychology,1
+GN1,467,Cross Disciplinary Studies,1
+GN1,502,Socio-Cultural Anthropology,1
+GN1,511,Human Rights,1
+GN1,468,Archeological Science,5
+GN1,250,Ethnology,11
+GN2,250,Ethnology,1
+GN270,250,Ethnology,1
+GN281,321,Human Evolution,3
+GN296,390,Psychiatric Nursing,1
+GN301,250,Ethnology,1
+GN301,283,Sociology,1
+GN347,250,Ethnology,1
+GN357,145,Communication Research,1
+GN387,259,International Development,1
+GN4,250,Ethnology,1
+GN448,250,Ethnology,1
+GN575,250,Ethnology,1
+GN60,468,Archeological Science,1
+GN673,468,Archeological Science,1
+GN700,468,Archeological Science,1
+GN849,468,Archeological Science,1
+GV14,403,Human Resource Management,1
+GV1580,525,Impotence,1
+H1,31,Developmental Biology,1
+H1,95,Applied Economics,1
+H1,181,Political Science,1
+H1,220,Urban Studies,1
+H1,267,International Conflict,1
+H1,375,Developmental Economics,1
+H1,408,Marital & Family Therapy,1
+H1,488,Social History,1
+H1,492,GeoPolitics,1
+H1,126,Strategic Management,2
+H1,403,Human Resource Management,2
+H1,411,Econometrics,2
+H1,513,Social Economics,2
+H1,431,Public Policy,3
+H1,79,Economics,4
+H3,283,Sociology,1
+H3,403,Human Resource Management,1
+H3,79,Economics,2
+H5,95,Applied Economics,1
+H5,379,German Studies,1
+H5,411,Econometrics,1
+H51,488,Social History,1
+H61,403,Human Resource Management,1
+H61,444,Engineering Education,1
+H62,95,Applied Economics,1
+H62,220,Urban Studies,1
+H62,469,Preventive Medicine,2
+H8,124,Social Psychology,1
+H8,126,Strategic Management,1
+H8,222,Linguistics,1
+H8,411,Econometrics,1
+H8,261,Political Studies,3
+H8,403,Human Resource Management,1
+H8,329,Personality,1
+H97,181,Political Science,1
+H97,220,Urban Studies,1
+HA1,94,Statistics,1
+HA1,99,BioStatistics,1
+HA1,375,Developmental Economics,1
+HA1,411,Econometrics,1
+HA214,95,Applied Economics,1
+HA29,535,Education Psychological Measures,1
+HB1,43,Finance,1
+HB1,281,Third World Political Economics,1
+HB1,283,Sociology,1
+HB1,411,Econometrics,1
+HB1,488,Social History,1
+HB1,95,Applied Economics,2
+HB1,513,Social Economics,5
+HB1,79,Economics,7
+HB131,513,Social Economics,1
+HB133,43,Finance,1
+HB139,411,Econometrics,3
+HB142,434,Environmental Policy,1
+HB172,79,Economics,4
+HB31,79,Economics,1
+HB5,79,Economics,1
+HB71,79,Economics,1
+HB75,513,Social Economics,1
+HB801,536,Marketing,1
+HB801,58,Business Ethics,1
+HB848,408,Marital & Family Therapy,1
+HB850,488,Social History,1
+HB881,402,Molecular Medicine,1
+HB881,408,Marital & Family Therapy,2
+HB9,43,Finance,1
+HB9,95,Applied Economics,1
+HB9,126,Strategic Management,1
+HB9,375,Developmental Economics,1
+HB9,513,Social Economics,1
+HB9,377,International Economics,2
+HB9,79,Economics,3
+HB98,513,Social Economics,1
+HC10,259,International Development,1
+HC10,411,Econometrics,1
+HC10,488,Social History,1
+HC10,543,World Trade; Law,1
+HC10,79,Economics,4
+HC101,79,Economics,1
+HC101,513,Social Economics,2
+HC107,95,Applied Economics,1
+HC161,261,Political Studies,1
+HC161,411,Econometrics,1
+HC241,281,Third World Political Economics,1
+HC241,431,Public Policy,1
+HC243,375,Developmental Economics,1
+HC244,375,Developmental Economics,3
+HC251,79,Economics,1
+HC251,388,Environmental Law,1
+HC257,95,Applied Economics,1
+HC267,375,Developmental Economics,1
+HC267,79,Economics,1
+HC281,488,Social History,1
+HC335,502,Socio-Cultural Anthropology,1
+HC340,375,Developmental Economics,1
+HC341,488,Social History,1
+HC411,95,Applied Economics,1
+HC411,375,Developmental Economics,1
+HC431,375,Developmental Economics,1
+HC431,407,Ethics,1
+HC501,259,International Development,1
+HC501,375,Developmental Economics,1
+HC501,431,Public Policy,1
+HC517,142,Music & Theatre,1
+HC59,431,Public Policy,1
+HC601,488,Social History,1
+HC601,95,Applied Economics,2
+HC701,375,Developmental Economics,1
+HC79,267,International Conflict,1
+HC800,95,Applied Economics,1
+HC900,527,Tourism,1
+HD2763,411,Econometrics,1
+HD4802,403,Human Resource Management,1
+HD4802,411,Econometrics,1
+HD4802,502,Socio-Cultural Anthropology,1
+HD4811,259,International Development,1
+HD4841,488,Social History,2
+HD58,126,Strategic Management,1
+HD5837,431,Public Policy,1
+HD6891,431,Public Policy,1
+HD6961,403,Human Resource Management,2
+HD6971,403,Human Resource Management,1
+HD7090,403,Human Resource Management,1
+HD72,95,Applied Economics,1
+HD7346,220,Urban Studies,1
+HD8101,411,Econometrics,1
+HD82,293,Climatology,1
+HD83,259,International Development,1
+HD87,79,Economics,1
+HD9685,94,Statistics,1
+HD9940,421,Dyes & Pigments,1
+HE1,267,International Conflict,1
+HE5,410,Critical Studies,1
+HE8690,145,Communication Research,1
+HF1351,377,International Economics,1
+HF1371,543,World Trade; Law,1
+HF1410,377,International Economics,1
+HF17,411,Econometrics,1
+HF5001,488,Social History,1
+HF5001,15,Hospital Financial Management,2
+HF5381,265,Vocational Counseling,1
+HF5801,536,Marketing,2
+HG3208,283,Sociology,1
+HG5993,95,Applied Economics,1
+HM1,122,Philosophy Psychology,1
+HM1,181,Political Science,1
+HM1,234,Symbolic Interaction,1
+HM1,246,Ethnic Migration,1
+HM1,250,Ethnology,1
+HM1,327,Criminology,1
+HM1,336,Child Abuse,1
+HM1,375,Developmental Economics,1
+HM1,408,Marital & Family Therapy,1
+HM1,410,Critical Studies,1
+HM1,412,Neuroscience Methods,1
+HM1,511,Human Rights,1
+HM1,513,Social Economics,1
+HM1,314,Public Administration,2
+HM1,444,Engineering Education,2
+HM1,124,Social Psychology,3
+HM1,403,Human Resource Management,5
+HM1,283,Sociology,10
+HM1,145,Communication Research,1
+HM101,183,Poetry,1
+HM104,407,Ethics,1
+HM104,431,Public Policy,1
+HM1126,124,Social Psychology,1
+HM133,171,Leadership & Organizational Behavior,1
+HM24,283,Sociology,1
+HM24,535,Education Psychological Measures,1
+HM251,498,Pragmatics & Discourse,1
+HM251,124,Social Psychology,5
+HM258,145,Communication Research,1
+HM261,145,Communication Research,1
+HM263,145,Communication Research,1
+HM281,283,Sociology,1
+HM291,234,Symbolic Interaction,1
+HM291,283,Sociology,1
+HM3,403,Human Resource Management,1
+HM37,438,Regional Studies,1
+HM48,403,Human Resource Management,2
+HM5,250,Ethnology,1
+HM5,403,Human Resource Management,2
+HM623,403,Human Resource Management,1
+HM7,403,Human Resource Management,3
+HM73,198,Political Geography,1
+HM9,283,Sociology,1
+HN1,209,English Literature,1
+HN1,281,Third World Political Economics,1
+HN1,283,Sociology,1
+HN1,438,Regional Studies,1
+HN1,502,Socio-Cultural Anthropology,1
+HN1,488,Social History,3
+HN17,105,Research Policy; Technology Management,1
+HN17,171,Leadership & Organizational Behavior,1
+HN19,527,Tourism,1
+HN28,124,Social Psychology,1
+HN29,408,Marital & Family Therapy,1
+HN381,246,Ethnic Migration,1
+HN471,511,Human Rights,1
+HN51,314,Public Administration,1
+HN51,408,Marital & Family Therapy,1
+HN51,418,Educational Psychology,1
+HN561,261,Political Studies,1
+HN681,407,Ethics,1
+HN780,408,Marital & Family Therapy,1
+HN8,488,Social History,1
+HN841,314,Public Administration,1
+HN90,209,English Literature,1
+HQ1,408,Marital & Family Therapy,1
+HQ1,525,Impotence,1
+HQ1060,154,Gerontology,2
+HQ1075,403,Human Resource Management,1
+HQ1101,403,Human Resource Management,1
+HQ1101,410,Critical Studies,3
+HQ1102,408,Marital & Family Therapy,1
+HQ1154,403,Human Resource Management,1
+HQ1181,403,Human Resource Management,1
+HQ1190,390,Psychiatric Nursing,1
+HQ1190,410,Critical Studies,1
+HQ12,410,Critical Studies,1
+HQ1206,244,Eating Disorders; Sex Roles,1
+HQ1381,403,Human Resource Management,1
+HQ1393,279,Biblical Literature,1
+HQ1726,407,Ethics,1
+HQ1726,171,Leadership & Organizational Behavior,1
+HQ21,403,Human Resource Management,1
+HQ503,420,Semiotics,1
+HQ503,488,Social History,1
+HQ60,525,Impotence,1
+HQ75,170,American History,1
+HQ75,410,Critical Studies,1
+HQ750,390,Psychiatric Nursing,1
+HQ750,408,Marital & Family Therapy,1
+HQ767,271,Social Work,1
+HQ768,145,Communication Research,1
+HQ768,312,Child Development,1
+HQ796,408,Marital & Family Therapy,1
+HT101,234,Symbolic Interaction,1
+HT101,488,Social History,1
+HT101,220,Urban Studies,3
+HT111,488,Social History,1
+HT1501,246,Ethnic Migration,1
+HT390,438,Regional Studies,1
+HT395,438,Regional Studies,1
+HT401,410,Critical Studies,1
+HT401,516,Rural Studies,1
+HT608,283,Sociology,1
+HV1,271,Social Work,3
+HV1571,283,Sociology,1
+HV2350,226,Audiology,1
+HV316,271,Social Work,1
+HV40,403,Human Resource Management,1
+HV45,271,Social Work,1
+HV45,425,Clinical Psychiatry,1
+HV5285,367,Addictive Behavior,1
+HV560,543,World Trade; Law,1
+HV6001,408,Marital & Family Therapy,3
+HV6001,327,Criminology,5
+HV6024,327,Criminology,1
+HV6201,327,Criminology,1
+HV6431,492,GeoPolitics,2
+HV6570,336,Child Abuse,1
+HV701,408,Marital & Family Therapy,1
+HV7231,327,Criminology,1
+HV7231,408,Marital & Family Therapy,1
+HV741,336,Child Abuse,2
+HV7551,327,Criminology,1
+HV9261,327,Criminology,2
+HV9950,327,Criminology,1
+HX1,261,Political Studies,1
+HX1,410,Critical Studies,1
+HX1,434,Environmental Policy,1
+HX1,502,Socio-Cultural Anthropology,1
+HX1,281,Third World Political Economics,2
+HX3,281,Third World Political Economics,1
+HX3,431,Public Policy,1
+HX6,379,German Studies,1
+HX8,410,Critical Studies,1
+JA1,79,Economics,1
+JA1,145,Communication Research,1
+JA1,267,International Conflict,1
+JA1,283,Sociology,1
+JA1,511,Human Rights,2
+JA1,261,Political Studies,2
+JA1,181,Political Science,5
+JA1,314,Public Administration,1
+JA1,348,Literary Criticism,1
+JA14,261,Political Studies,2
+JA2,181,Political Science,2
+JA26,279,Biblical Literature,1
+JA26,407,Ethics,1
+JA26,431,Public Policy,1
+JA26,511,Human Rights,1
+JA28,181,Political Science,1
+JA3,511,Human Rights,1
+JA3,261,Political Studies,2
+JA4,267,International Conflict,1
+JA5,314,Public Administration,1
+JA73,181,Political Science,1
+JA74,124,Social Psychology,1
+JA76,267,International Conflict,1
+JA8,407,Ethics,1
+JA8,511,Human Rights,1
+JA8,181,Political Science,2
+JA8,261,Political Studies,4
+JA86,261,Political Studies,1
+JC311,431,Public Policy,2
+JC421,431,Public Policy,1
+JC599,495,Opera,1
+JF1051,431,Public Policy,1
+JF1525,145,Communication Research,2
+JF2011,261,Political Studies,1
+JF501,181,Political Science,1
+JK1,181,Political Science,1
+JK1976,261,Political Studies,1
+JL1,403,Human Resource Management,1
+JL1201,181,Political Science,1
+JN1,431,Public Policy,1
+JN101,261,Political Studies,1
+JN26,431,Public Policy,1
+JN3201,261,Political Studies,1
+JN500,488,Social History,1
+JN6501,431,Public Policy,1
+JQ1725,438,Regional Studies,1
+JS3001,314,Public Administration,1
+JS40,314,Public Administration,1
+JS6117,407,Ethics,1
+JX1,492,GeoPolitics,2
+JX1,267,International Conflict,4
+JX1291,267,International Conflict,2
+JX18,267,International Conflict,1
+JX18,383,Foreign Policy,1
+JX1901,267,International Conflict,1
+JZ11,383,Foreign Policy,1
+JZ6,267,International Conflict,1
+K18,408,Marital & Family Therapy,1
+K19,126,Strategic Management,1
+K23,511,Human Rights,1
+K3,383,Foreign Policy,1
+K487,27,Law,1
+L11,381,Philosophy of Education,1
+L26,418,Educational Psychology,1
+LA1535,265,Vocational Counseling,1
+LA226,182,Science History,1
+LB1044,410,Critical Studies,2
+LB1101,312,Child Development,1
+LB2300,169,Language Learning,1
+LB2395,444,Engineering Education,1
+LC65,411,Econometrics,1
+LH3,209,English Literature,1
+NX1,142,Music & Theatre,1
+NX1,407,Ethics,1
+NX1,420,Semiotics,1
+NX1,209,English Literature,2
+NX180,105,Research Policy; Technology Management,1
+NX180,250,Ethnology,1
+NX456,31,Developmental Biology,1
+NX501,145,Communication Research,1
+NX6,502,Socio-Cultural Anthropology,1
+NX645,230,Hispanic Studies,1
+NX7,261,Political Studies,1
+P1,112,Classics,1
+P1,143,Memory & Cognition,1
+P1,169,Language Learning,1
+P1,183,Poetry,1
+P1,209,English Literature,1
+P1,380,Medieval History,1
+P1,498,Pragmatics & Discourse,2
+P1,222,Linguistics,11
+P11,112,Classics,2
+P115,498,Pragmatics & Discourse,1
+P118,222,Linguistics,2
+P120,222,Linguistics,1
+P121,222,Linguistics,2
+P129,169,Language Learning,3
+P140,222,Linguistics,2
+P2,112,Classics,1
+P2,183,Poetry,1
+P2,222,Linguistics,3
+P204,222,Linguistics,1
+P211,169,Language Learning,1
+P215,222,Linguistics,1
+P215,302,Speech Language & Hearing,2
+P221,186,Speech Recognition,1
+P25,209,English Literature,1
+P25,222,Linguistics,1
+P291,222,Linguistics,1
+P3,222,Linguistics,1
+P3,420,Semiotics,1
+P301,222,Linguistics,1
+P302,498,Pragmatics & Discourse,2
+P306,420,Semiotics,1
+P325,222,Linguistics,2
+P327,169,Language Learning,2
+P35,250,Ethnology,1
+P37,222,Linguistics,1
+P37,418,Educational Psychology,1
+P40,222,Linguistics,1
+P40,498,Pragmatics & Discourse,2
+P41,498,Pragmatics & Discourse,1
+P47,31,Developmental Biology,1
+P47,498,Pragmatics & Discourse,1
+P47,541,Italian Studies,1
+P501,222,Linguistics,1
+P51,169,Language Learning,1
+P61,222,Linguistics,1
+P87,410,Critical Studies,1
+P87,496,Education,1
+P87,145,Communication Research,7
+P9,112,Classics,1
+P9,169,Language Learning,1
+P9,209,English Literature,1
+P9,420,Semiotics,1
+P9,222,Linguistics,4
+P90,145,Communication Research,2
+P91,145,Communication Research,2
+P92,145,Communication Research,3
+P94,145,Communication Research,2
+P95,418,Educational Psychology,1
+P96,145,Communication Research,4
+P96,408,Marital & Family Therapy,1
+P98,498,Pragmatics & Discourse,1
+P99,212,Higher Education,1
+P99,498,Pragmatics & Discourse,1
+PA1,407,Ethics,1
+PA1,112,Classics,10
+PA19,112,Classics,1
+PA2,112,Classics,2
+PA2002,112,Classics,1
+PA25,112,Classics,2
+PA3,112,Classics,1
+PA3,444,Engineering Education,1
+PA3,407,Ethics,3
+PA3001,112,Classics,1
+PA3339,77,Cardiovascular,1
+PA3339,112,Classics,1
+PA9,61,Seismology,1
+PA9,112,Classics,4
+PB1,209,English Literature,1
+PB1,222,Linguistics,1
+PB1,420,Semiotics,1
+PB1,498,Pragmatics & Discourse,1
+PB10,222,Linguistics,1
+PB5,222,Linguistics,1
+PC1,222,Linguistics,1
+PC2,222,Linguistics,3
+PC2001,169,Language Learning,1
+PC2001,380,Medieval History,1
+PC2001,553,Hydraulics,1
+PC2001,222,Linguistics,3
+PC3,222,Linguistics,2
+PC4001,488,Social History,1
+PC4003,380,Medieval History,1
+PC4008,222,Linguistics,1
+PC4008,380,Medieval History,3
+PC800,250,Ethnology,1
+PD1,222,Linguistics,1
+PE1,209,English Literature,1
+PE1,498,Pragmatics & Discourse,1
+PE1,222,Linguistics,4
+PE1001,496,Education,1
+PE1001,498,Pragmatics & Discourse,1
+PE1128,169,Language Learning,2
+PE1425,222,Linguistics,1
+PE1701,498,Pragmatics & Discourse,1
+PE2801,498,Pragmatics & Discourse,1
+PE9,498,Pragmatics & Discourse,1
+PF3001,379,German Studies,1
+PF3003,183,Poetry,1
+PF3003,222,Linguistics,2
+PF3003,420,Semiotics,2
+PF4,222,Linguistics,1
+PF5001,420,Semiotics,1
+PG1,222,Linguistics,1
+PG1,502,Socio-Cultural Anthropology,1
+PG1,381,Philosophy of Education,2
+PG1600,181,Political Science,1
+PG1900,281,Third World Political Economics,1
+PG2901,181,Political Science,1
+PG3227,502,Socio-Cultural Anthropology,1
+PG3233,112,Classics,1
+PG3350,112,Classics,1
+PG3900,502,Socio-Cultural Anthropology,1
+PG4004,222,Linguistics,1
+PG5000,502,Socio-Cultural Anthropology,1
+PH1,222,Linguistics,1
+PH3001,502,Socio-Cultural Anthropology,1
+PJ1,391,Asian Studies,1
+PJ2,222,Linguistics,2
+PJ3001,279,Biblical Literature,2
+PJ3104,222,Linguistics,1
+PJ4,182,Science History,1
+PJ5,222,Linguistics,1
+PJ5001,348,Literary Criticism,1
+PJ5120,279,Biblical Literature,1
+PJ7501,431,Public Policy,2
+PL1001,222,Linguistics,1
+PL2274,498,Pragmatics & Discourse,1
+PL2303,209,English Literature,1
+PL5001,222,Linguistics,1
+PL8000,222,Linguistics,2
+PL8000,431,Public Policy,2
+PM101,222,Linguistics,1
+PM151,209,English Literature,1
+PM151,250,Ethnology,1
+PM7801,222,Linguistics,1
+PN1,183,Poetry,1
+PN1,209,English Literature,1
+PN1009,418,Educational Psychology,1
+PN1010,112,Classics,1
+PN1010,183,Poetry,1
+PN1010,283,Sociology,1
+PN1010,410,Critical Studies,1
+PN1042,183,Poetry,1
+PN1601,209,English Literature,1
+PN1601,467,Cross Disciplinary Studies,1
+PN1611,209,English Literature,1
+PN1620,410,Critical Studies,1
+PN1861,209,English Literature,1
+PN1993,489,Consumer Electronics,2
+PN1993,467,Cross Disciplinary Studies,4
+PN1993,410,Critical Studies,6
+PN1993,145,Communication Research,1
+PN1995,209,English Literature,1
+PN1995,410,Critical Studies,2
+PN2,161,Electro Analytical Chemistry,1
+PN2,169,Language Learning,1
+PN2,279,Biblical Literature,1
+PN2,281,Third World Political Economics,1
+PN2,348,Literary Criticism,1
+PN2,410,Critical Studies,1
+PN2,420,Semiotics,1
+PN2,467,Cross Disciplinary Studies,1
+PN2,498,Pragmatics & Discourse,1
+PN2,541,Italian Studies,1
+PN2,214,Modern Language,2
+PN2,230,Hispanic Studies,2
+PN2,209,English Literature,10
+PN2000,142,Music & Theatre,1
+PN2000,209,English Literature,1
+PN2000,467,Cross Disciplinary Studies,1
+PN2000,535,Education Psychological Measures,1
+PN2000,183,Poetry,1
+PN2001,209,English Literature,1
+PN2001,214,Modern Language,1
+PN2003,541,Italian Studies,1
+PN2004,142,Music & Theatre,1
+PN2004,183,Poetry,1
+PN2004,420,Semiotics,1
+PN2008,230,Hispanic Studies,1
+PN203,222,Linguistics,1
+PN2100,209,English Literature,1
+PN212,498,Pragmatics & Discourse,1
+PN22,209,English Literature,1
+PN241,209,English Literature,1
+PN241,214,Modern Language,1
+PN241,420,Semiotics,1
+PN2860,391,Asian Studies,1
+PN3,214,Modern Language,1
+PN3,498,Pragmatics & Discourse,1
+PN3010,418,Educational Psychology,1
+PN3171,407,Ethics,1
+PN3311,209,English Literature,1
+PN3448,410,Critical Studies,2
+PN3495,209,English Literature,1
+PN4,183,Poetry,3
+PN4071,169,Language Learning,1
+PN4071,410,Critical Studies,2
+PN4077,145,Communication Research,1
+PN4700,145,Communication Research,1
+PN4701,145,Communication Research,2
+PN471,209,English Literature,1
+PN4751,145,Communication Research,1
+PN49,122,Philosophy Psychology,1
+PN5,407,Ethics,1
+PN55,182,Science History,1
+PN56,390,Psychiatric Nursing,1
+PN6,380,Medieval History,1
+PN603,209,English Literature,1
+PN603,214,Modern Language,1
+PN6057,410,Critical Studies,1
+PN6071,539,Optometry,1
+PN6099,553,Hydraulics,1
+PN6099,78,Paleobiology,1
+PN661,407,Ethics,1
+PN685,209,English Literature,1
+PN80,183,Poetry,1
+PN80,209,English Literature,1
+PN80,410,Critical Studies,1
+PN801,541,Italian Studies,1
+PN801,380,Medieval History,2
+PN851,183,Poetry,1
+PN851,209,English Literature,2
+PN855,18,Organic Chemistry,1
+PN9,183,Poetry,1
+PN9,209,English Literature,1
+PN9,541,Italian Studies,1
+PN99,502,Socio-Cultural Anthropology,1
+PQ1,214,Modern Language,1
+PQ1,498,Pragmatics & Discourse,1
+PQ1,541,Italian Studies,3
+PQ2,214,Modern Language,6
+PQ2605,541,Italian Studies,1
+PQ3,214,Modern Language,1
+PQ4001,488,Social History,1
+PQ4001,541,Italian Studies,8
+PQ6001,321,Human Evolution,1
+PQ6001,488,Social History,1
+PQ6001,230,Hispanic Studies,3
+PQ6001,380,Medieval History,7
+PQ6105,380,Medieval History,1
+PQ6115,420,Semiotics,1
+PQ6144,380,Medieval History,1
+PQ6337,380,Medieval History,1
+PQ7081,230,Hispanic Studies,4
+PQ7900,230,Hispanic Studies,1
+PQ9000,250,Ethnology,1
+PQ9144,488,Social History,1
+PQ9900,431,Public Policy,1
+PR1,222,Linguistics,1
+PR1,283,Sociology,1
+PR1,513,Social Economics,1
+PR1,420,Semiotics,2
+PR1,209,English Literature,9
+PR1223,209,English Literature,1
+PR1223,420,Semiotics,1
+PR129,419,Mycology,1
+PR13,498,Pragmatics & Discourse,1
+PR146,209,English Literature,1
+PR1901,420,Semiotics,1
+PR2885,209,English Literature,1
+PR31,496,Education,1
+PR3579,209,English Literature,2
+PR4023,209,English Literature,1
+PR4229,209,English Literature,1
+PR441,209,English Literature,1
+PR445,488,Social History,1
+PR457,209,English Literature,2
+PR4579,209,English Literature,1
+PR4579,420,Semiotics,1
+PR461,209,English Literature,1
+PR4836,209,English Literature,1
+PR5,209,English Literature,1
+PR500,183,Poetry,1
+PR5686,209,English Literature,1
+PR581,209,English Literature,1
+PR6005,209,English Literature,1
+PR6019,209,English Literature,1
+PR8514,209,English Literature,3
+PR8858,348,Literary Criticism,1
+PR9180,230,Hispanic Studies,1
+PR9340,348,Literary Criticism,1
+PR9600,420,Semiotics,1
+PS1,71,Psychoanalysis,1
+PS1,348,Literary Criticism,1
+PS1,498,Pragmatics & Discourse,1
+PS1,209,English Literature,3
+PS2124,209,English Literature,1
+PS273,170,American History,1
+PS301,412,Neuroscience Methods,1
+PS301,183,Poetry,2
+PS3229,209,English Literature,1
+PS3531,420,Semiotics,1
+PS3545,461,Wildlife Research,1
+PS370,209,English Literature,1
+PS508,230,Hispanic Studies,1
+PS508,411,Econometrics,1
+PS508,410,Critical Studies,2
+PS561,209,English Literature,1
+PT1,183,Poetry,1
+PT1136,403,Human Resource Management,1
+PT1141,61,Seismology,1
+PT1141,183,Poetry,2
+PT1169,268,Art History,1
+PT123,381,Philosophy of Education,1
+PT2,183,Poetry,1
+PT2,541,Italian Studies,1
+PT2045,183,Poetry,2
+PT3810,379,German Studies,1
+PT4,222,Linguistics,1
+PT4,410,Critical Studies,1
+PT4,183,Poetry,4
+PT405,183,Poetry,1
+PT5001,222,Linguistics,1
+PT63,379,German Studies,1
+PT7001,209,English Literature,1
+Q1,23,Material Science,0.012195122
+Q1,33,Toxicology Applied Pharmacology,0.012195122
+Q1,37,Pharmaceutical Research,0.012195122
+Q1,82,Clinical Endocrinology,0.012195122
+Q1,150,Psychosis; Schizophrenia,0.012195122
+Q1,278,Applied Physiology; Muscle,0.012195122
+Q1,361,Microbiology Biotechnology,0.012195122
+Q1,365,Surfactants,0.012195122
+Q1,508,Marine Pollution,0.012195122
+Q1,338,Geology (International),0.012987013
+Q1,401,Sociobiology,0.012987013
+Q1,441,Peptides,0.012987013
+Q1,1,Clinical Cancer Research,0.025182135
+Q1,4,Protein Science,0.025182135
+Q1,6,Neuroscience; Molecular & Cellular,0.025182135
+Q1,9,Immunology,0.025182135
+Q1,10,Macromolecules & Polymers,0.025182135
+Q1,12,Oncology,0.025182135
+Q1,13,Surface Science,0.025182135
+Q1,15,Hospital Financial Management,0.025182135
+Q1,16,Rheumatology,0.025182135
+Q1,18,Organic Chemistry,0.025182135
+Q1,19,Leukemia,0.025182135
+Q1,20,Virology,0.025182135
+Q1,21,Plant Physiology,0.025182135
+Q1,25,Kidney,0.025182135
+Q1,26,Pharmacology Science,0.025182135
+Q1,29,Bacteriology,0.025182135
+Q1,30,Marine Biology,0.025182135
+Q1,31,Developmental Biology,0.025182135
+Q1,35,Inorganic Chemistry,0.025182135
+Q1,40,Clinical Neurophysiology,0.025182135
+Q1,42,Nutrition,0.025182135
+Q1,45,Fertility,0.025182135
+Q1,46,Applied Optics,0.025182135
+Q1,48,Molecular Cell Biology,0.025182135
+Q1,54,Pharmaceutical Design,0.025182135
+Q1,55,AntiMicrobial Agents,0.025182135
+Q1,61,Seismology,0.025182135
+Q1,63,Neurology,0.025182135
+Q1,69,Psychopharmacology,0.025182135
+Q1,72,Oceanography,0.025182135
+Q1,77,Cardiovascular,0.025182135
+Q1,78,Paleobiology,0.025182135
+Q1,81,Human Molecular Genetics,0.025182135
+Q1,103,Astronomy & Astrophysics,0.025182135
+Q1,106,Drug Discovery,0.025182135
+Q1,125,High Energy Physics,0.025182135
+Q1,127,Genomics & Nucleic Acids,0.025182135
+Q1,135,Stem Cells,0.025182135
+Q1,144,Vision,0.025182135
+Q1,157,Geology & Tectonics,0.025182135
+Q1,158,GeoChemistry,0.025182135
+Q1,161,Electro Analytical Chemistry,0.025182135
+Q1,166,Quaternary Research,0.025182135
+Q1,176,Optics & Lasers,0.025182135
+Q1,179,Molecular Physics,0.025182135
+Q1,180,Comparative Animal Physiology,0.025182135
+Q1,185,Nanotechnology,0.025182135
+Q1,200,Radiation Protection,0.025182135
+Q1,213,Ecology,0.025182135
+Q1,218,Molecular Biological Evolution,0.025182135
+Q1,233,Proteomics,0.025182135
+Q1,238,Diabetes Metabolism,0.025182135
+Q1,254,Atmospheric GeoPhysics,0.025182135
+Q1,262,Molecular Endocrinology,0.025182135
+Q1,264,Molecular Biochemical Parasitology,0.025182135
+Q1,293,Climatology,0.025182135
+Q1,310,Chemistry & Material Science,0.025182135
+Q1,320,Mutation; DNA Repair,0.025182135
+Q1,321,Human Evolution,0.025182135
+Q1,322,Space Research,0.025182135
+Q1,353,Geophysical Science,0.025182135
+Q1,366,Eye,0.025182135
+Q1,372,Applied Genetics,0.025182135
+Q1,384,Gut,0.025182135
+Q1,394,Gene Therapy,0.025182135
+Q1,422,Drug Safety,0.025182135
+Q1,423,Molecular Ecology,0.025182135
+Q1,424,Cytogentics & Genome Mapping,0.025182135
+Q1,426,Paleogeography,0.025182135
+Q1,443,Sexually Transmitted Diseases,0.025182135
+Q1,454,Insect Physiology,0.025182135
+Q1,463,Physics; Current Developments,0.025182135
+Q1,248,Sound & Vibration,1
+Q1,477,Consciousness,1
+Q1,409,Aerospace,1.012987013
+Q1,131,Pest Management Science,1.025182135
+Q1,182,Science History,2
+Q11,431,Public Policy,1
+Q124,182,Science History,1
+Q125,182,Science History,3
+Q174,477,Consciousness,1
+Q175,477,Consciousness,1
+Q175,182,Science History,1
+Q2,182,Science History,1
+Q223,403,Human Resource Management,1
+Q225,403,Human Resource Management,1
+Q225,409,Aerospace,1
+Q350,299,Wireless Communication,1
+Q41,182,Science History,1
+Q54,454,Insect Physiology,1
+Q9,182,Science History,1
+QA11,418,Educational Psychology,1
+QA402,96,Automatic Control,1
+QA75,3,Data Mining,1
+QA75,56,Systems Software,1
+QA75,446,Machine Learning,1
+QA76,430,User Interface Design,2
+QC1,248,Sound & Vibration,0.5
+QC1,497,Acoustics,0.5
+QC145,187,Fluid Mechanics,1
+QC6,125,High Energy Physics,1
+QC770,522,Reliability Engineering,1
+QC851,97,Atmospheric Science,1
+QD13,182,Science History,1
+QE11,182,Science History,1
+QH1,78,Paleobiology,1
+QH1,423,Molecular Ecology,1
+QH3,548,Crustaceans,1
+QH301,40,Clinical Neurophysiology,1
+QH301,81,Human Molecular Genetics,1
+QH301,131,Pest Management Science,1
+QH332,151,BioEthics,1
+QH366,196,Botany,1
+QH431,81,Human Molecular Genetics,1
+QH581,31,Developmental Biology,1
+QL461,53,Zoology,1
+QL737,321,Human Evolution,1
+QL750,6,Neuroscience; Molecular & Cellular,1
+QL750,401,Sociobiology,1
+QP1,441,Peptides,1
+QP141,42,Nutrition,1
+QP141,83,Dietetics,1
+QP301,73,Sports Medicine,1
+QP303,215,Neurophsyiology & Neuroscience,1
+QP34,530,Hormone Research,1
+QP351,215,Neurophsyiology & Neuroscience,1
+QP351,412,Neuroscience Methods,1
+QP351,40,Clinical Neurophysiology,3
+QP360,144,Vision,1
+QP360,477,Consciousness,1
+QP360,40,Clinical Neurophysiology,2
+QP360,412,Neuroscience Methods,2
+QP425,532,Sleep,1
+QP460,226,Audiology,3
+QP501,1,Clinical Cancer Research,1
+R108,454,Insect Physiology,1
+R11,422,Drug Safety,1
+R11,451,Medical Education,1
+R118,145,Communication Research,1
+R131,182,Science History,1
+R131,494,Medical Libraries,1
+R131,182,Science History,4
+R482,443,Sexually Transmitted Diseases,1
+R702,234,Symbolic Interaction,1
+R723,151,BioEthics,1
+R724,151,BioEthics,1
+R724,301,Region & Medical Ethics,1
+R725,301,Region & Medical Ethics,1
+R726,197,Public Health Service,1
+R726,472,Psychosomatic Medicine,1
+R91,478,Otolyngology; Head Neck,1
+RA207,454,Insect Physiology,1
+RA410,6,Neuroscience; Molecular & Cellular,1
+RA410,272,Medical Insurance,1
+RA418,250,Ethnology,1
+RA418,272,Medical Insurance,1
+RA418,403,Human Resource Management,1
+RA440,207,Mental Health Nursing,1
+RA483,531,Public Health,1
+RA541,116,Tropical Medicine,1
+RA790,235,Child & Adolescent Psychiatry,1
+RA790,271,Social Work,1
+RA790,336,Child Abuse,1
+RA790,355,Psychiatric Services,1
+RC261,181,Political Science,1
+RC266,472,Psychosomatic Medicine,1
+RC321,11,Affective Disorders,1
+RC321,63,Neurology,1
+RC321,408,Marital & Family Therapy,1
+RC321,464,Pychiatric & Behavioral Genetics,1
+RC321,472,Psychosomatic Medicine,1
+RC321,71,Psychoanalysis,2
+RC321,150,Psychosis; Schizophrenia,2
+RC321,318,Mental Health Assessment,3
+RC321,425,Clinical Psychiatry,3
+RC326,150,Psychosis; Schizophrenia,1
+RC329,11,Affective Disorders,1
+RC423,478,Otolyngology; Head Neck,1
+RC423,464,Pychiatric & Behavioral Genetics,1
+RC423,302,Speech Language & Hearing,4
+RC425,412,Neuroscience Methods,1
+RC440,390,Psychiatric Nursing,1
+RC451,154,Gerontology,1
+RC451,408,Marital & Family Therapy,1
+RC451,367,Addictive Behavior,1
+RC454,312,Child Development,1
+RC467,244,Eating Disorders; Sex Roles,1
+RC467,425,Clinical Psychiatry,1
+RC469,425,Clinical Psychiatry,1
+RC488,408,Marital & Family Therapy,1
+RC488,312,Child Development,1
+RC49,11,Affective Disorders,1
+RC490,425,Clinical Psychiatry,1
+RC500,425,Clinical Psychiatry,1
+RC565,533,Neurotoxicology,1
+RC565,367,Addictive Behavior,2
+RC570,312,Child Development,1
+RC570,464,Pychiatric & Behavioral Genetics,1
+RC86,405,Clinical Rehabilitation,1
+RC86,490,Menopause,1
+RC952,174,Geriatrics,1
+RC954,447,Geratric Nursing,1
+RD1,405,Clinical Rehabilitation,1
+RD525,192,Orthodontics,1
+RD92,414,Trauma,1
+RF1,110,Otolaryngology; Laryngoscope,2
+RF1,226,Audiology,2
+RF286,226,Audiology,2
+RF290,226,Audiology,1
+RF300,226,Audiology,1
+RG951,462,Midwifery,1
+RJ1,445,NeuroImmunology,1
+RJ245,462,Midwifery,2
+RJ499,235,Child & Adolescent Psychiatry,1
+RJ503,235,Child & Adolescent Psychiatry,1
+RK1,194,Dental Research,1
+RK1,203,Periodontology,1
+RK1,457,Oral Surgery,1
+RK1,162,Dental Education,2
+RM315,104,Substance-abuse Treatment,1
+RS1,422,Drug Safety,1
+RT1,414,Trauma,1
+RT1,447,Geratric Nursing,1
+RT1,462,Midwifery,1
+RT1,492,GeoPolitics,1
+RT1,67,Nursing Specialists,2
+RT1,547,Nursing Theory,2
+RT1,138,Nursing Education,3
+RT1,207,Mental Health Nursing,3
+RT120,447,Geratric Nursing,1
+RT50,138,Nursing Education,1
+RT6,138,Nursing Education,1
+RT71,138,Nursing Education,2
+RT81,492,GeoPolitics,1
+RT86,211,Nursing Administration,1
+RT89,211,Nursing Administration,3
+RT90,138,Nursing Education,1
+RT97,447,Geratric Nursing,1
+S1,420,Semiotics,1
+S1,488,Social History,1
+S560,270,Agricultural Economics,1
+SB469,436,Construction,1
+T15,488,Social History,1
+T58,74,Operations Research,1
+T58,430,User Interface Design,1
+T61,444,Engineering Education,1
+TH7700,497,Acoustics,1
+TJ2,416,Solar & Wind Power,1
+TK4175,497,Acoustics,1
+TK5105,57,Decision Support Systems,1
+TK5105,288,Spyware; Malware,2
+TK7882,188,Computer Graphics,1
+TL501,92,Military Aviation,1
+TP890,421,Dyes & Pigments,1
+TS1300,177,Wool,1
+TS1300,421,Dyes & Pigments,4
+TS1399,177,Wool,1
+TS1640,421,Dyes & Pigments,1
+TT490,421,Dyes & Pigments,2
+TX335,117,Food Protection,2
+TX341,83,Dietetics,1
+U162,267,International Conflict,1
+U162,492,GeoPolitics,1
+U21,492,GeoPolitics,1
+V1,488,Social History,1
+VK1,468,Archeological Science,2
+Z1007,164,Library Science; Infomation Retrieval,1
+Z1007,467,Cross Disciplinary Studies,1
+Z1007,276,Search Engines; Web Crawling,2
+Z1008,209,English Literature,1
+Z1011,230,Hispanic Studies,1
+Z1037,418,Educational Psychology,1
+Z119,344,Printing,1
+Z1225,279,Biblical Literature,1
+Z2006,209,English Literature,1
+Z280,182,Science History,1
+Z284,164,Library Science; Infomation Retrieval,1
+Z286,443,Sexually Transmitted Diseases,1
+Z5111,250,Ethnology,1
+Z5112,321,Human Evolution,1
+Z6201,407,Ethics,1
+Z665,246,Ethnic Migration,1
+Z6664,91,AIDS Research,1
+Z668,276,Search Engines; Web Crawling,1
+Z671,404,Ecological Modeling,1
+Z671,446,Machine Learning,1
+Z671,276,Search Engines; Web Crawling,2
+Z671,164,Library Science; Infomation Retrieval,5
+Z674,276,Search Engines; Web Crawling,1
+Z674,164,Library Science; Infomation Retrieval,1
+Z675,494,Medical Libraries,2
+Z675,164,Library Science; Infomation Retrieval,1
+Z678,164,Library Science; Infomation Retrieval,2
+Z678,446,Machine Learning,2
+Z678,444,Engineering Education,1
+Z682,380,Medieval History,1
+Z683,164,Library Science; Infomation Retrieval,1
+Z688,164,Library Science; Infomation Retrieval,1
+Z689,164,Library Science; Infomation Retrieval,1
+Z692,164,Library Science; Infomation Retrieval,1
+Z692,443,Sexually Transmitted Diseases,1
+Z695,164,Library Science; Infomation Retrieval,1
+Z696,142,Music & Theatre,1
+Z699,276,Search Engines; Web Crawling,2
+Z699,446,Machine Learning,2
+Z699,164,Library Science; Infomation Retrieval,3
+Z701,446,Machine Learning,1
+Z703,164,Library Science; Infomation Retrieval,1
+Z711,164,Library Science; Infomation Retrieval,1
+Z733,112,Classics,1
+Z733,209,English Literature,2
+Z7751,122,Philosophy Psychology,1
+Z921,279,Biblical Literature,1
