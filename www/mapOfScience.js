@@ -70,6 +70,13 @@ var force = d3.layout.force()
 
 var fullGraph;
 
+var sizeBy = function(attr) {
+  fullGraph.nodes.forEach( function(d) {
+    d._size = d[attr];
+  });
+  applyFilter(weightFilter);
+  redraw(0,xScale, yScale);
+};
 
 // Must load original graph before 
 d3.json("mapOfScienceData.json", function(error, data) {
@@ -94,10 +101,11 @@ d3.json("mapOfScienceData.json", function(error, data) {
     });
 
     // Give each node a num_areas attribute and reset size to use this
+    /*
     fullGraph.nodes.forEach( function(d) {
       d.num_areas = areaCount[d.id] || 1;
       d._size = d.num_areas;
-    });
+    });*/
 
     // set InPhO Button to render node sizes based on entry count per node
     $("#btnInPhO").click( function(event) {
@@ -107,9 +115,32 @@ d3.json("mapOfScienceData.json", function(error, data) {
       applyFilter(weightFilter);
       redraw(0, xScale, yScale);
     });
-    
-    // Lastly, enable the InPhO button (by removing disabled attribute)
-    $("#btnInPhO").removeAttr("disabled");
+
+    $("#btnUCSD").click( function(event) {
+      fullGraph.nodes.forEach( function(d) {
+        d._size = d.xfact;
+      });
+      applyFilter(weightFilter);
+      redraw(0, xScale, yScale);
+    });
+  });
+
+  d3.csv("htrc_coords.csv", function(error, response) {
+    response.forEach(function(d, i) {
+      console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " + String(parseFloat(d['match_x'])));
+      data.nodes.push({'x' : parseFloat(d['match_x']), 
+       'y' : parseFloat(d['match_y']),
+       'color' : 'OliveGreen',
+       'yfact' : 15.0,
+       'xfact' : 15.0,
+       'id' : i+567,
+       'name' : d['id'],
+       '_size' : 10.0,
+       'group': 0});
+    });
+    buildGraph(data);
+    redraw(0, xScale, yScale);
+  
   });
 
   
@@ -137,7 +168,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
              redraw(0, xScale, yScale);
            }));
 
-  buildGraph(data);
+  //buildGraph(data);
 });
 
 
@@ -174,7 +205,7 @@ function updateNodes(nodeData) {
 
   var nodeEnter = node.enter()   // introduce new
     .append("g")
-    .attr("class", "node")
+    .attr("class", function (d) { return "node n" + d.id; })
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
     }).append("circle")
