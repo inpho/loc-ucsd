@@ -28,13 +28,16 @@ with open('htrc_lcco.csv', 'rb') as origfile:
                     print row['id'], "SOLR error"
     
                 # write CSV row 
-                url_id = row['id'].replace('+=','/').replace('=','/')
-                writer.writerow({
-                    'id' : row['id'],
-                    'x' : float(row['match_x']),
-                    'y' : 360 - float(row['match_y']),
-                    'title' : title,
-                    'url' : "http://hdl.handle.net/2027/%s" % url_id,
-                    })
+                try:
+                    url_id = row['id'].replace('+=','/').replace('=','/')
+                    writer.writerow({
+                        'id' : row['id'],
+                        'x' : float(row['match_x']),
+                        'y' : 360 - float(row['match_y']),
+                        'title' : title,
+                        'url' : "http://hdl.handle.net/2027/%s" % url_id,
+                        })
+                except UnicodeEncodeError:
+                    print row['id'], "Unicode encoding"
 
                 i+= 1 # iterate the magic variable
