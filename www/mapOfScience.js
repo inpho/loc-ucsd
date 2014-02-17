@@ -35,7 +35,8 @@ var color = {
   "BrickRed":d3.rgb("#841F27"),
   "Yellow":d3.rgb("#FFFF00"),
   "Emerald":d3.rgb("#55D43F"),
-  "Red":d3.rgb("#FF0000")
+  "Red":d3.rgb("#FF0000"),
+  "Grey":d3.rgb("#CCCCCC")
 }
 
 
@@ -127,15 +128,17 @@ d3.json("mapOfScienceData.json", function(error, data) {
 
   d3.csv("htrc_coords.csv", function(error, response) {
     response.forEach(function(d, i) {
-      console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " + String(parseFloat(d['match_x'])));
-      data.nodes.push({'x' : parseFloat(d['match_x']), 
-       'y' : parseFloat(d['match_y']),
-       'color' : 'OliveGreen',
-       'yfact' : 15.0,
-       'xfact' : 15.0,
+      console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " 
+        + String(parseFloat(d['x'])) + " " + String(parseFloat(d['y'])));
+      data.nodes.push({'x' :parseFloat(d['x']), 
+       'y' : parseFloat(d['y']),
+       'color' : '#cccccc',
+       'yfact' : 7.0,
+       'xfact' : 7.0,
        'id' : i+567,
-       'name' : d['id'],
-       '_size' : 10.0,
+       'name' : d['title'],
+       '_size' : 3.0,
+       'url' : d['url'],
        'group': 0});
     });
     buildGraph(data);
@@ -193,6 +196,13 @@ function buildGraph(graph) {
     .text( function(d) { return d.name; });
   
   node.append("title").text(function(d) { return d.name; });
+  
+  node.filter( function(d) { return d.url !== undefined && d.url !== null; })
+    .append("a")
+    .attr("xlink:href", function(d) {return d.url})
+    .attr("target", "_blank")
+    .append("circle")
+    .attr("r", function(d) { return d._size });
 }
 
 
