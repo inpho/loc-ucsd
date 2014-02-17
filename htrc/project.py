@@ -28,10 +28,12 @@ class Pair(object):
 
 ## initialize a dictionary to store the differences in
 diffs = dict()
+links = dict()
 
 ## process the json generated from the map file
 with open("mapOfScienceData.json") as mapdata:
     data = json.load(mapdata)
+    links = data['links']
     for subd in data['nodes']:
         diffs[subd['id']] = subd
 
@@ -42,4 +44,4 @@ with open("subd_coords.csv", 'rb') as newdata:
         diffs[int(row['subd_id'])]['x'] = float(row['x'])
         diffs[int(row['subd_id'])]['y'] = float(row['y'])
 
-print json.dumps({'nodes' : diffs.values()})
+print json.dumps({'nodes' : diffs.values(), 'links' : links})
