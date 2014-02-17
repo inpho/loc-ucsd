@@ -33,21 +33,13 @@ diffs = dict()
 with open("mapOfScienceData.json") as mapdata:
     data = json.load(mapdata)
     for subd in data['nodes']:
-        print subd
-        diffs[subd['id']] = Pair(subd['x'], subd['y'])
+        diffs[subd['id']] = subd
 
 ## process the CSV generated from the LOC data analysis.
 with open("subd_coords.csv", 'rb') as newdata:
     reader = csv.DictReader(newdata, delimiter=",",quotechar="\"")
     for row in reader:
-        a = diffs[int(row['subd_id'])]
-        b = Pair(row['x'], row['y'])
-        ## calculate difference
-        diffs[int(row['subd_id'])] -= Pair(row['x'], row['y'])
+        diffs[int(row['subd_id'])]['x'] = float(row['x'])
+        diffs[int(row['subd_id'])]['y'] = float(row['y'])
 
-        ## some nice logging
-        print row['subd_id'], a, b, a - b
-
-## average diffs
-print "average diff"
-print reduce(lambda x,y: x+y, diffs.values()) / Pair(len(diffs), len(diffs))
+print json.dumps({'nodes' : diffs.values()})
