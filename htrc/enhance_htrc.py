@@ -28,21 +28,13 @@ with open('htrc_lcco.csv', 'rb') as origfile:
                     print row['id'], "SOLR error"
     
                 # write CSV row 
-                try:
-                    url_id = row['id'].replace('+=','/').replace('=','/') #used
-                    below
-                    writer.writerow({
-                        'name' : row['id'],
-                        'x' : float(row['match_x']),
-                        'y' : 360 - float(row['match_y']),
-                        'title' : title,
-                        'url' : "http://hdl.handle.net/2027/%s" % url_id,
-                        'group' : 0,
-                        '_size' : 3.0,
-                        'color' : 'Grey', 
-                        'id' : i
-                        })
-                except:
-                    print row['id'], "writer error"
+                url_id = row['id'].replace('+=','/').replace('=','/')
+                writer.writerow({
+                    'id' : row['id'],
+                    'x' : float(row['match_x']),
+                    'y' : 360 - float(row['match_y']),
+                    'title' : title,
+                    'url' : "http://hdl.handle.net/2027/%s" % url_id,
+                    })
 
                 i+= 1 # iterate the magic variable
