@@ -126,7 +126,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
     });
   });
 
-  d3.csv("htrc_coords_new6.csv", function(error, response) {
+  d3.csv("htrc_coords.csv", function(error, response) {
     response.forEach(function(d, i) {
       console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " 
         + String(parseFloat(d['x'])) + " " + String(parseFloat(d['y'])));
