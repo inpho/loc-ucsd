@@ -126,7 +126,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
     });
   });
 
-  d3.csv("htrc_coords_new.csv", function(error, response) {
+  d3.csv("htrc_coords_new6.csv", function(error, response) {
     response.forEach(function(d, i) {
       console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " 
         + String(parseFloat(d['x'])) + " " + String(parseFloat(d['y'])));
@@ -141,6 +141,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
        'url' : d['url'],
        'htrc_id' : d['id'],
        'htrc86' : d['htrc86'] == 'true',
+       'htrc6' : d['htrc6'] == 'true',
        'group': 0});
     });
     buildGraph(data);
@@ -217,7 +218,8 @@ function updateNodes(nodeData) {
     }).append("circle")
     .attr("class", function(d) { 
       return (d.htrc_id ? "htrc" : "") +
-       (d.htrc86 ? " htrc86" : ""); })
+       (d.htrc86 ? " htrc86" : "") +
+       (d.htrc6 ? " htrc6" : ""); })
     .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; })
     .attr("data-htrc-id", function(d) { return d.htrc_id; })
