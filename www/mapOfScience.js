@@ -223,7 +223,8 @@ function updateNodes(nodeData) {
     }).append("circle")
     .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; })
-    .attr("onclick", function(d) { return "htrc.solr.get('"+d.htrc_id+"', function(data) { alert('yep, doin the thing'); })" });
+    .attr("data-htrc-id", function(d) { return d.htrc_id; })
+    .attr("onclick", "htrc.popover(this)");
 
   var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
