@@ -25,6 +25,7 @@ htrc.solr.get = function(id, callback) {
   return true; 
 };
 
+
 htrc.popover = function(elt) {
   htrc.solr.get($(elt).data('htrc-id'), function (data) {
     data = data.response.docs[0];
