@@ -91,6 +91,8 @@ d3.json("mapOfScienceData.json", function(error, data) {
 
   // initialize node size using the original UCSD data 
   fullGraph.nodes.forEach( function(d) {
+    if ((d.x - 250) > 0) d.x -= 250;
+    else d.x += 250;
     d._size = d.xfact;
   });
   
@@ -130,7 +132,12 @@ d3.json("mapOfScienceData.json", function(error, data) {
     response.forEach(function(d, i) {
       console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " 
         + String(parseFloat(d['x'])) + " " + String(parseFloat(d['y'])));
-      data.nodes.push({'x' :parseFloat(d['x']), 
+
+      var x = parseFloat(d['x']);
+      if ((x - 250) > 0) x -= 250;
+      else x += 250;
+      
+      data.nodes.push({'x' : x, 
        'y' : parseFloat(d['y']),
        'color' : '#cccccc',
        'yfact' : 7.0,
