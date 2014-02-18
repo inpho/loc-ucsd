@@ -30,6 +30,7 @@ htrc.popover = function(elt) {
   htrc.solr.get($(elt).data('htrc-id'), function (data) {
     data = data.response.docs[0];
     var html = Mustache.to_html($("#template").html(), data);
+    $("#container").html(html);
     $(elt).popover({
       content : html,
       title : data['title'][0],

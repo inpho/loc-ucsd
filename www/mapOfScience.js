@@ -197,14 +197,7 @@ function buildGraph(graph) {
     .text( function(d) { return d.name; });
   
   node.append("title").text(function(d) { return d.name; });
-  /* 
-  node.filter( function(d) { return d.url !== undefined && d.url !== null; })
-    .append("a")
-    .attr("xlink:href", function(d) {return d.url})
-    .attr("target", "_blank")
-    .append("circle")
-    .attr("r", function(d) { return d._size });
-    */
+
 }
 
 
@@ -221,6 +214,7 @@ function updateNodes(nodeData) {
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
     }).append("circle")
+    .attr("class", function(d) { return d.htrc_id ? "htrc" : ""})
     .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; })
     .attr("data-htrc-id", function(d) { return d.htrc_id; })
@@ -232,7 +226,6 @@ function updateNodes(nodeData) {
     })
     .select("circle")
       .attr("r", function(d) { return d._size; });
-
 
   var nodeExit = node.exit().remove();   // remove expiring
 }
