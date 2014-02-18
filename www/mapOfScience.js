@@ -137,8 +137,9 @@ d3.json("mapOfScienceData.json", function(error, data) {
        'xfact' : 7.0,
        'id' : i+567,
        'name' : d['title'],
-       '_size' : 3.0,
+       '_size' : 5.0,
        'url' : d['url'],
+       'htrc_id' : d['id'],
        'group': 0});
     });
     buildGraph(data);
@@ -196,13 +197,14 @@ function buildGraph(graph) {
     .text( function(d) { return d.name; });
   
   node.append("title").text(function(d) { return d.name; });
-  
+  /* 
   node.filter( function(d) { return d.url !== undefined && d.url !== null; })
     .append("a")
     .attr("xlink:href", function(d) {return d.url})
     .attr("target", "_blank")
     .append("circle")
     .attr("r", function(d) { return d._size });
+    */
 }
 
 
@@ -220,7 +222,8 @@ function updateNodes(nodeData) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
     }).append("circle")
     .attr("r", function(d) { return d._size; })
-    .style("fill", function(d) { return color[d.color]; });
+    .style("fill", function(d) { return color[d.color]; })
+    .attr("onclick", function(d) { return "htrc.solr.get('"+d.htrc_id+"', function(data) { alert('yep, doin the thing'); })" });
 
   var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
