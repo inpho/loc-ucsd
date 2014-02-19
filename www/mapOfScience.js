@@ -68,6 +68,9 @@ var svg = chart.append("svg")
   .attr("width", width)
   .attr("height", height);
 
+createKey(height-100);
+
+
 var force = d3.layout.force()
   .charge(0) // might be important.. 
   .size([window.innerWidth * xScale, window.innerHeight * yScale]);
@@ -297,8 +300,51 @@ function applyFilter(filter) {
     }));
   
 }
+function createKey(y) {
+var key = svg.append("g")
+  .attr("transform","translate(15,"+y+")")
+  .append("text")
+  .attr("dx", "3em")
+  .attr("dy", ".3em")
+  .style("stroke", 'Black 2px')
+  .style("text-anchor", "start")
+  .text("Key");
 
+key = svg.append("g")
+  .attr("transform","translate(15,"+(y+20)+")");
+key.append("circle")
+  .attr("r", "5")
+  .attr("class", "htrc htrc-label");
+key.append("text")
+  .attr("dx", "1em")
+  .attr("dy", ".3em")
+  .style("stroke", 'Black 1px')
+  .style("text-anchor", "start")
+  .text("HTRC 1315");
+key = svg.append("g")
+  .attr("transform","translate(15,"+(y+40)+")");
+key.append("circle")
+  .attr("r", "5")
+  .attr("class", "htrc86 htrc-label");
+key.append("text")
+  .attr("dx", "1em")
+  .attr("dy", ".3em")
+  .style("stroke", 'Black 1px')
+  .style("text-anchor", "start")
+  .text("HTRC 86");
+key = svg.append("g")
+  .attr("transform","translate(15,"+(y+60)+")");
+key.append("circle")
+  .attr("r", "5")
+  .attr("class", "htrc6 htrc-label");
+key.append("text")
+  .attr("dx", "1em")
+  .attr("dy", ".3em")
+  .style("stroke", 'Black 1px')
+  .style("text-anchor", "start")
+  .text("HTRC 6");
 
+}
 
 window.onresize = function(event) {
 
