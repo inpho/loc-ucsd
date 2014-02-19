@@ -16,8 +16,8 @@ var maxNodeX = 500;
 var minNodeY = 100;
 var maxNodeY = 350;
 
-var width = window.innerWidth * .95;
-var height = window.innerHeight * .91;
+var width = window.clientWidth;
+var height = window.innerHeight - 175;
 
 var xScale = window.innerWidth / maxNodeX;
 var yScale = window.innerHeight / maxNodeY;
