@@ -25,16 +25,27 @@ htrc.solr.get = function(id, callback) {
   return true; 
 };
 
-
-htrc.popover = function(elt) {
-  htrc.solr.get($(elt).data('htrc-id'), function (data) {
-    data = data.response.docs[0];
-    var html = Mustache.to_html($("#template").html(), data);
-    $("#container").html(html);
-    $(elt).popover({
-      content : html,
-      title : data['title'][0],
-      container : 'body'
-    });
-  });
-};
+/* htrc.popover
+ * Create a popover for HTRC content
+ * */
+$.ajax({
+  url : "popover.content.mustache", 
+  async: false,
+  success: function(template) { 
+    htrc.popover = function(elt) {
+      if (!($(elt).data('popover'))) {
+        htrc.solr.get($(elt).data('htrc-id'), function (data) {
+          data = data.response.docs[0];
+          var html = Mustache.to_html(template, data);
+          $(elt).popover({
+            html: true,
+            content : html,
+            title : data['title'][0],
+            container : 'body'
+          });
+          $(elt).popover('show');
+        });
+      }
+    }
+  } 
+});

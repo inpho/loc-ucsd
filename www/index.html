@@ -15,23 +15,14 @@
 
 <h1>The HTRC 1315 Corpus</h1>
 <p>This data projection for the UCSD Map of Science shows each volume in the InPhO's HTRC 1315 corpus on animal consciousness. Hovering over the black dot displays the title of the volume, and clicking the dot will link to the volume in the HTRC (with some exceptions). The scroll wheel can be used to zoom in and out. There are 776 volumes on the map.</p>
-<div id="template" style="display: none"></div>
-<div id="container" style="width: 300px;"></div>
 
 <!--<input id="weightSlider" name="scale" 
   type="range" min="0" max="20" step="1" value="0" />
 <button id="btnUCSD">UCSD</button>
 <button id="btnInPhO">InPhO</button>-->
+
 <div id="chart"> </div>
 <script src="mapOfScience.js"></script>
-
-<!-- Kind of a hack. I still feel there's a better way. -->
-<script>
-  $.ajax({
-    url : "popover.content.mustache", 
-    success: function(template) { $('#template').html(template); }, 
-    async: false});
-</script>
 
 </body>
 </html>
