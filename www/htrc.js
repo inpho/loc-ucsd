@@ -43,7 +43,12 @@ $.ajax({
             title : data['title'][0],
             container : 'body'
           });
-          $(elt).popover('show');
+         
+         // append close button to title.
+         var title = $(elt).data('popover').options.title;
+         $(elt).data('popover').options.title = '<button type="button" class="close" data-dismiss="popover">&times;</button>' + title;
+         $(elt).data('popover').tip().on('click', '[data-dismiss="popover"]', function(e) { $(elt).popover('hide'); });
+         $(elt).popover('show');
         });
       }
     }

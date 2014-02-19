@@ -221,15 +221,16 @@ function updateNodes(nodeData) {
     .attr("class", function (d) { return "node n" + d.id; })
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
-    }).append("circle")
+    })
+    .attr("data-htrc-id", function(d) { return d.htrc_id; })
+    .attr("onclick", function(d) { return (d.htrc_id) ? "htrc.popover(this)" : ""; })
+    .append("circle")
     .attr("class", function(d) { 
       return (d.htrc_id ? "htrc" : "") +
        (d.htrc86 ? " htrc86" : "") +
        (d.htrc6 ? " htrc6" : ""); })
     .attr("r", function(d) { return d._size; })
-    .style("fill", function(d) { return color[d.color]; })
-    .attr("data-htrc-id", function(d) { return d.htrc_id; })
-    .attr("onclick", function(d) { return (d.htrc_id) ? "htrc.popover(this)" : ""; });
+    .style("fill", function(d) { return color[d.color]; });
 
   var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
