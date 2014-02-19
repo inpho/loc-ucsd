@@ -1,12 +1,41 @@
 .htrc {
-    stroke: black;
+    stroke: #ccc;
     fill: white;
 }
 .htrc86 {
-    stroke: black;
-    fill: black;
+    stroke: #999;
+    stroke-width:4px;
+    fill: white;
+    /*
+    animation: pulse 10s infinite;
+    -webkit-animation: pulse 10s infinite;
+    */
 }
 .htrc6 {
     stroke: black;
-    fill: blue;
+    fill: white;
+    animation: bigpulse 10s infinite;
+    -webkit-animation: bigpulse 10s infinite;
+}
+
+@keyframes bigpulse {
+    0% { stroke-width:5px;}    
+    50% { stroke-width:15px;}    
+    100% { stroke-width:5px;}    
+}
+@-webkit-keyframes bigpulse {
+    0% { stroke-width:5px;}    
+    50% { stroke-width:15px;}    
+    100% { stroke-width:5px;}    
+}
+@keyframes pulse {
+    0% { stroke-width:3px;}    
+    50% { stroke-width:5px;}    
+    100% { stroke-width:3px;}    
+}
+@-webkit-keyframes pulse {
+    0% { stroke-width:3px;}    
+    50% { stroke-width:5px;}    
+    100% { stroke-width:3px;}    
+
 }
