@@ -331,7 +331,7 @@ cur = key.append("g")
   .attr("transform","translate(15,40)");
 cur.append("circle")
   .attr("r", "5")
-  .attr("class", "htrc86 htrc-label");
+  .attr("class", "htrc htrc86 htrc-label");
 cur.append("text")
   .attr("dx", "1em")
   .attr("dy", ".3em")
@@ -343,13 +343,22 @@ cur = key.append("g")
   .attr("transform","translate(15,60)");
 cur.append("circle")
   .attr("r", "5")
-  .attr("class", "htrc6 htrc-label");
+  .attr("class", "htrc htrc86 htrc6 htrc-label");
 cur.append("text")
   .attr("dx", "1em")
   .attr("dy", ".3em")
   .style("stroke", 'Black 1px')
   .style("text-anchor", "start")
   .text("HTRC 6");
+
+cur = key.append("g")
+  .attr("transform","translate(0, 80)")
+  .append("text")
+  .attr("dx", "-.9em")
+  .attr("dy", ".3em")
+  .style("stroke", 'Black 2px')
+  .style("text-anchor", "start")
+  .text("Click Node for Details");
 
 }
 

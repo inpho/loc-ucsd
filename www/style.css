@@ -1,32 +1,34 @@
+.link {
+    opacity: 0.3;    
+}
+
 .htrc {
-    stroke: #ccc;
+    stroke: black;
     fill: white;
+    fill-opacity: 0.3;
+    stroke-opacity: 0.8;
 }
 .htrc86 {
-    stroke: #999;
     stroke-width:4px;
-    fill: white;
     /*
     animation: pulse 10s infinite;
     -webkit-animation: pulse 10s infinite;
     */
 }
 .htrc6 {
-    stroke: black;
-    fill: white;
     animation: bigpulse 10s infinite;
     -webkit-animation: bigpulse 10s infinite;
 }
 
 @keyframes bigpulse {
-    0% { stroke-width:5px;}    
-    50% { stroke-width:15px;}    
-    100% { stroke-width:5px;}    
+    0% { stroke-width:7px; stroke-opacity: 0.8;}    
+    50% { stroke-width:15px; stroke-opacity: 1;}    
+    100% { stroke-width:7px; stroke-opacity: 0.8;}    
 }
 @-webkit-keyframes bigpulse {
-    0% { stroke-width:5px;}    
-    50% { stroke-width:15px;}    
-    100% { stroke-width:5px;}    
+    0% { stroke-width:7px; stroke-opacity: 0.8;}    
+    50% { stroke-width:15px; stroke-opacity: 1;}    
+    100% { stroke-width:7px; stroke-opacity: 0.8;}    
 }
 @keyframes pulse {
     0% { stroke-width:3px;}    
