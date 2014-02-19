@@ -16,11 +16,11 @@ var maxNodeX = 500;
 var minNodeY = 100;
 var maxNodeY = 350;
 
-var width = window.clientWidth;
-var height = window.innerHeight - 175;
+var width = function() { return $(window).width(); }
+var height = function() { return $(window).height() - $("#chart").offset().top - 10; }
 
-var xScale = window.innerWidth / maxNodeX;
-var yScale = window.innerHeight / maxNodeY;
+var xScale = width() / maxNodeX;
+var yScale = height() / maxNodeY;
 
 var xOffset = -80 * xScale; // Represents the difference between the window pane's (0,0) and the graph's (0,0)
 var yOffset = -80 * yScale; 
@@ -65,10 +65,10 @@ $("#btnScience").click( function(event) {
 var chart = d3.select("#chart")
 
 var svg = chart.append("svg")
-  .attr("width", width)
-  .attr("height", height);
+  .attr("width", width())
+  .attr("height", height());
 
-createKey(height-100);
+createKey(height()-100);
 
 
 var force = d3.layout.force()
@@ -304,6 +304,10 @@ function applyFilter(filter) {
 function createKey(y) {
 var key = svg.append("g")
   .attr("transform","translate(15,"+y+")")
+  .attr("id", "key");
+
+var cur = key.append("g")
+  .attr("transform","translate(0, 0)")
   .append("text")
   .attr("dx", "3em")
   .attr("dy", ".3em")
@@ -311,34 +315,36 @@ var key = svg.append("g")
   .style("text-anchor", "start")
   .text("Key");
 
-key = svg.append("g")
-  .attr("transform","translate(15,"+(y+20)+")");
-key.append("circle")
+cur = key.append("g")
+  .attr("transform","translate(15,20)");
+cur.append("circle")
   .attr("r", "5")
   .attr("class", "htrc htrc-label");
-key.append("text")
+cur.append("text")
   .attr("dx", "1em")
   .attr("dy", ".3em")
   .style("stroke", 'Black 1px')
   .style("text-anchor", "start")
   .text("HTRC 1315");
-key = svg.append("g")
-  .attr("transform","translate(15,"+(y+40)+")");
-key.append("circle")
+
+cur = key.append("g")
+  .attr("transform","translate(15,40)");
+cur.append("circle")
   .attr("r", "5")
   .attr("class", "htrc86 htrc-label");
-key.append("text")
+cur.append("text")
   .attr("dx", "1em")
   .attr("dy", ".3em")
   .style("stroke", 'Black 1px')
   .style("text-anchor", "start")
   .text("HTRC 86");
-key = svg.append("g")
-  .attr("transform","translate(15,"+(y+60)+")");
-key.append("circle")
+
+cur = key.append("g")
+  .attr("transform","translate(15,60)");
+cur.append("circle")
   .attr("r", "5")
   .attr("class", "htrc6 htrc-label");
-key.append("text")
+cur.append("text")
   .attr("dx", "1em")
   .attr("dy", ".3em")
   .style("stroke", 'Black 1px')
@@ -348,13 +354,14 @@ key.append("text")
 }
 
 window.onresize = function(event) {
+  svg.attr("width", width())
+    .attr("height", height());
 
-  svg.attr("width", window.innerWidth * .95)
-    .attr("height", window.innerHeight * .93);
+  xScale = width() / maxNodeX;
+  yScale = height() / maxNodeY;
 
-  xScale = window.innerWidth / maxNodeX;
-  yScale = window.innerHeight / maxNodeY;
 
   redraw(0, xScale, yScale);
+  $('#key').attr('transform','translate(15,'+(height()-100)+')');
 }
 
