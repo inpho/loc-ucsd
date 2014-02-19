@@ -16,6 +16,9 @@ var maxNodeX = 500;
 var minNodeY = 100;
 var maxNodeY = 350;
 
+var width = window.innerWidth * .95;
+var height = window.innerHeight * .91;
+
 var xScale = window.innerWidth / maxNodeX;
 var yScale = window.innerHeight / maxNodeY;
 
@@ -62,8 +65,8 @@ $("#btnScience").click( function(event) {
 var chart = d3.select("#chart")
 
 var svg = chart.append("svg")
-  .attr("width", window.innerWidth * .95)
-  .attr("height", window.innerHeight * .93);
+  .attr("width", width)
+  .attr("height", height);
 
 var force = d3.layout.force()
   .charge(0) // might be important.. 
@@ -128,8 +131,6 @@ d3.json("mapOfScienceData.json", function(error, data) {
 
   d3.csv("htrc_coords.csv", function(error, response) {
     response.forEach(function(d, i) {
-      console.log("adding " + d['id'], + String(data.nodes.length) + " " + String(i+567) + " " 
-        + String(parseFloat(d['x'])) + " " + String(parseFloat(d['y'])));
       data.nodes.push({'x' :parseFloat(d['x']), 
        'y' : parseFloat(d['y']),
        'color' : '#cccccc',
@@ -160,6 +161,8 @@ d3.json("mapOfScienceData.json", function(error, data) {
                var wheelDelta = event.wheelDelta;
                var delta = parseInt(wheelDelta / 100) * 0.5;
                if (xScale + delta > 0 && yScale + delta > 0) {
+                 xOffset -= ((event.pageX-$('#chart').offset().left-xOffset)*(delta/xScale));
+                 yOffset -= ((event.pageY-$('#chart').offset().top-yOffset)*(delta/yScale));
                  xScale += delta;
                  yScale += delta;
                }
@@ -223,7 +226,7 @@ function updateNodes(nodeData) {
     .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; })
     .attr("data-htrc-id", function(d) { return d.htrc_id; })
-    .attr("onclick", "htrc.popover(this)");
+    .attr("onclick", function(d) { return (d.htrc_id) ? "htrc.popover(this)" : ""; });
 
   var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
