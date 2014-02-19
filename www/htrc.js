@@ -36,11 +36,16 @@ $.ajax({
       if (!($(elt).data('popover'))) {
         htrc.solr.get($(elt).data('htrc-id'), function (data) {
           data = data.response.docs[0];
+          if (data.oclc)
+            data.oclc = data.oclc[0].replace("(OCoLC)","").replace("ocm","");
+
+
+          title = (data.title_ab && data.title_ab[0]) || data.title[0];
           var html = Mustache.to_html(template, data);
           $(elt).popover({
             html: true,
             content : html,
-            title : data['title'][0],
+            title : title,
             container : 'body'
           });
          
@@ -48,6 +53,8 @@ $.ajax({
          var title = $(elt).data('popover').options.title;
          $(elt).data('popover').options.title = '<button type="button" class="close" data-dismiss="popover">&times;</button>' + title;
          $(elt).data('popover').tip().on('click', '[data-dismiss="popover"]', function(e) { $(elt).popover('hide'); });
+
+         // manually show popover, instead of just initialize
          $(elt).popover('show');
         });
       }
