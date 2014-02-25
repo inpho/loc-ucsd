@@ -32,16 +32,23 @@ $.ajax({
   url : "popover.content.mustache", 
   async: false,
   success: function(template) { 
+    // define the popover function
     htrc.popover = function(elt) {
+
+      // if popover is not initialized
       if (!($(elt).data('popover'))) {
+
+        // query the HTRC Solr index for the data, initialize popup
         htrc.solr.get($(elt).data('htrc-id'), function (data) {
           data = data.response.docs[0];
+
+          // parse the WorldCat ID 
           if (data.oclc)
             data.oclc = data.oclc[0].replace("(OCoLC)","").replace("ocm","");
 
-
           title = (data.title_ab && data.title_ab[0]) || data.title[0];
-          var html = Mustache.to_html(template, data);
+
+          var html = Mustache.to_html(template, data); // build the template
           $(elt).popover({
             html: true,
             content : html,
