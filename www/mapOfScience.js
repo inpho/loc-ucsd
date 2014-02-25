@@ -164,10 +164,20 @@ d3.json("mapOfScienceData.json", function(error, data) {
                var wheelDelta = event.wheelDelta;
                var delta = parseInt(wheelDelta / 100) * 0.5;
                if (xScale + delta > 0 && yScale + delta > 0) {
+                 // popover reposition needs old coords
+                 var xScaleOld = xScale; var xOffsetOld = xOffset;
+                 var yScaleOld = yScale; var yOffsetOld = yOffset;
+                 
                  xOffset -= ((event.pageX-$('#chart').offset().left-xOffset)*(delta/xScale));
                  yOffset -= ((event.pageY-$('#chart').offset().top-yOffset)*(delta/yScale));
                  xScale += delta;
                  yScale += delta;
+                 
+                 $(".popover").offset(function(i,coords) {
+                     var boxX = (coords.left - xOffsetOld) / xScaleOld;
+                     var boxY = (coords.top - yOffsetOld) / yScaleOld - chartOff;
+                     return { top: boxY*yScale + yOffset, left: boxX*xScale + xOffset };
+                   });
                }
                redraw(500, xScale, yScale);
              }}));
@@ -177,6 +187,9 @@ d3.json("mapOfScienceData.json", function(error, data) {
            .on("drag", function() {
              xOffset += d3.event.dx;
              yOffset += d3.event.dy;
+             $(".popover").offset(function(i,coords) {
+                 return {top: coords.top + d3.event.dy, left: coords.left + d3.event.dx};
+                 });
              redraw(0, xScale, yScale);
            }));
 
