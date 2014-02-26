@@ -3,9 +3,7 @@ Script to enhance the htrc_lcco mapping with metadata from the HTRC Solr index.
 """
 
 import csv
-import json
-from time import sleep
-from urllib2 import urlopen
+import htrc
 
 # open and intialize csv files
 with open('htrc_lcco.csv', 'rb') as origfile:
@@ -19,11 +17,8 @@ with open('htrc_lcco.csv', 'rb') as origfile:
 
                 ## retrieve the metadata from Solr 
                 try:
-                    solr ="http://chinkapin.pti.indiana.edu:9994/solr/meta/select/?q=id:%s" % row['id']
-                    solr += "&wt=json" ## retrieve JSON results
-                    data = json.load(urlopen(solr))
+                    data = htrc.metadata(row['id'])
                     title = data['response']['docs'][0]['title'][0]
-                    sleep(2) ## IMPORTANT: THROTTLE REQUESTS
                 except:
                     print row['id'], "SOLR error"
     
