@@ -38,7 +38,7 @@ with open("mapOfScienceData.json") as mapdata:
         diffs[subd['id']] = subd
 
 ## process the CSV generated from the LOC data analysis.
-with open("subd_coords.csv", 'rb') as newdata:
+with open("../data/csv/subd_coords.csv", 'rb') as newdata:
     reader = csv.DictReader(newdata, delimiter=",",quotechar="\"")
     for row in reader:
         diffs[int(row['subd_id'])]['x'] = float(row['x'])

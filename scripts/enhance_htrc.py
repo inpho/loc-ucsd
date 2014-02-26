@@ -6,8 +6,8 @@ import csv
 import htrc
 
 # open and intialize csv files
-with open('htrc_lcco.csv', 'rb') as origfile:
-    with open('htrc_coords.csv', 'wb') as newfile:
+with open('../data/csv/htrc_lcco.csv', 'rb') as origfile:
+    with open('../data/csv/htrc_coords.csv', 'wb') as newfile:
         reader = csv.DictReader(origfile)
         writer = csv.DictWriter(newfile, ['id', 'x', 'y', 'title', 'url'])
 

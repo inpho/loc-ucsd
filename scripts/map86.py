@@ -16,8 +16,8 @@ vol6=["uc2.ark+=13960=t5w66bs1h",
 rows86 = []
 rows6 = []
 
-with open('../www/htrc_coords_new.csv', 'rb') as origfile:
-    with open('htrc_coords_new6.csv', 'wb') as newfile:
+with open('../www/htrc_coords.csv', 'rb') as origfile:
+    with open('../data/csv/htrc_coords_new6.csv', 'wb') as newfile:
         reader = csv.DictReader(origfile)
         writer = csv.DictWriter(newfile, ['id', 'x', 'y', 'title','url','htrc86','htrc6'])
         for row in reader:
