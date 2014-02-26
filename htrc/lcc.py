@@ -76,6 +76,7 @@ def get_lccs(lccns):
     lccs = dict()
     
     for path, lccn in lccns.iteritems():
+        # check if marc is cached locally
         loc_marc_path = os.path.join(path, "loc.marc.xml")
         print loc_marc_path
         if not os.path.exists(loc_marc_path):
@@ -110,8 +111,6 @@ def get_lccn_from_marc(xml):
 
 def get_title_from_marc(xml):
     return get_marc_value(xml, '245', 'a')
-
-
 
 def get_lcc_from_marc(xml):
     # MARC tag 050a/b or 991h/i
