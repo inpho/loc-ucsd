@@ -33,18 +33,23 @@ def get_lccns(directory):
             data = json.load(f)
 
         for record in data['records'].itervalues():
-            lccn = record.get("lccns")
-            if lccn:
-                assert len(lccn) == 1
-                lccns[dirname] = lccn[0]
-            else:
-                marc = parse_marc(record['marc-xml'].encode('utf-8'))
-                marc_lccn = get_lccn_from_marc(marc)
-                if marc_lccn:
-                    lccns[dirname] = marc_lccn
+            lccns[dirname] = get_lccn(record)
 
 
     return lccns
+
+def get_lccn(record, dirname):
+    lccn = record.get("lccns")
+    if lccn:
+        assert len(lccn) == 1
+        lccn = lccn[0]
+        return lccn
+    else:
+        marc = parse_marc(record['marc-xml'].encode('utf-8'))
+        marc_lccn = get_lccn_from_marc(marc)
+        if marc_lccn:
+            lccn = marc_lccn
+            return lccn
 
 def get_titles(directory):
     titles = dict()
