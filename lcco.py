@@ -96,14 +96,16 @@ def in_range(lcc, candidate):
     else:
         return True
 
-assert in_range("LB", "L") == True
-assert in_range("L", "LB") == False
+if __name__ == '__main__':
+    assert in_range("LB", "L") == True
+    assert in_range("L", "LB") == False
 
-assert get_closest("LB1138") == "LB1101-1139"
-assert get_next("LB1138") == "LB5-3640"
+    assert get_closest("LB1138") == "LB1101-1139"
+    assert get_next("LB1138") == "LB5-3640"
 
-closest = get_closest(sys.argv[-1])
-if closest == sys.argv[-1]:
-    print get_next(closest)
-else:
-    print closest
+    closest = get_closest(sys.argv[-1])
+    if closest == sys.argv[-1]:
+        print get_next(closest)
+    else:
+        print closest
+
