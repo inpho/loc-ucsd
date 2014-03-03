@@ -38,14 +38,14 @@ def get_lccns(directory):
 
     return lccns
 
-def get_lccn(record, dirname):
-    lccn = record.get("lccns")
+def get_lccn(record):
+    lccn = record.get("lccn")
     if lccn:
         assert len(lccn) == 1
         lccn = lccn[0]
         return lccn
     else:
-        marc = parse_marc(record['marc-xml'].encode('utf-8'))
+        marc = parse_marc(record['fullrecord'].encode('utf-8'))
         marc_lccn = get_lccn_from_marc(marc)
         if marc_lccn:
             lccn = marc_lccn

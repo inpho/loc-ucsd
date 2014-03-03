@@ -16,8 +16,6 @@ with open(volumefile) as f:
     for line in f:
         find_ucsd_mappings(line)
 
-ucsd = generate_lcc_ucsd_map()
-
 #pseudo-code
 def find_ucsd_mappings(id):
     """ Takes an ID and returns a list of ucsd classifications """
@@ -27,6 +25,8 @@ def find_ucsd_mappings(id):
     # do some stuff to find the LCCN - look at lcc.py
     lccn = lcc.get_lccn(metadata) # demo data
 
+
+def find_classifcation:
     # look up the LCC using lcco.py
     classification = lcc.get_lccs(lccns)
 

@@ -2,7 +2,7 @@ import json
 from time import sleep
 from urllib2 import urlopen
 
-def metadata(htrc_id):
+def metadata(htrc_id, sleep_time=1):
     """ Queries the HTRC Solr index and returns the metadata.
     Documentation: http://www.hathitrust.org/htrc/solr-api
     """
@@ -11,5 +11,6 @@ def metadata(htrc_id):
     solr += "&wt=json" ## retrieve JSON results
     # TODO: exception handling
     data = json.load(urlopen(solr))
-    sleep(1) ## JUST TO MAKE SURE WE ARE THROTTLED
-    return data
+    if sleep:
+        sleep(sleep_time) ## JUST TO MAKE SURE WE ARE THROTTLED
+    return data['response']['docs'][0]

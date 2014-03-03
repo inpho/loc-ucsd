@@ -18,8 +18,6 @@ with open('htrc86.json') as jsonfile:
 with open('../data/csv/htrc_lcco.csv', 'rb') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        if not row['id2'].startswith('0'):
-            row['id2'] = '0' + row['id2']
         if row['id'] in volumes6:
             htrc6.append({'id' : row['id'], 
                           'lccn' : row['id2'],
