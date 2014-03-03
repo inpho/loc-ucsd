@@ -96,8 +96,8 @@ def get_lccs(lccns):
 
 def parse_marc(raw):
     # lazy workaround
-    # raw = raw.replace(' xmlns', ' xmlnamespace')
-    # ET.register_namespace('', 'http://www.loc.gov/MARC21/slim')
+    raw = raw.replace(' xmlns', ' xmlnamespace')
+    ET.register_namespace('', 'http://www.loc.gov/MARC21/slim')
     return ET.fromstring(raw)
 
 def get_marc_value(xml, tag, code):
