@@ -18,23 +18,28 @@ with open('htrc86.json') as jsonfile:
 with open('../data/csv/htrc_lcco.csv', 'rb') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        if not row['id2'].startswith('0'):
+            row['id2'] = '0' + row['id2']
         if row['id'] in volumes6:
             htrc6.append({'id' : row['id'], 
                           'lccn' : row['id2'],
+                          'full_call' : row['full_call'],
                           'collection' : 'htrc6'})
         elif row['id'] in volumes86:
             htrc86.append({'id' : row['id'], 
                            'lccn' : row['id2'],
+                          'full_call' : row['full_call'],
                            'collection' : 'htrc86'})
         else:
             htrc1314.append({'id' : row['id'], 
                              'lccn' : row['id2'],
+                             'full_call' : row['full_call'],
                              'collection': 'htrc1314'})
 
 print len(htrc1314), len(htrc86), len(htrc6)
 
 with open('../data/htrc/all.csv', 'w') as newfile:
-    writer = csv.DictWriter(newfile, ['id', 'lccn'], extrasaction='ignore')
+    writer = csv.DictWriter(newfile, ['collection', 'id', 'lccn'], extrasaction='ignore')
     for row in htrc6:
         writer.writerow(row)
     for row in htrc86:
